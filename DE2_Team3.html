@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://i.ytimg.com https://img.youtube.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.youtube.com https://www.linkedin.com; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), clipboard-read=(), clipboard-write=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jesusmariniweb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
+    <link rel="icon" href="img/canal_logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <style>
+* {
+  margin:   0;
+  padding:  0; 
+  box-sizing: border-box;
+}
+body {
+  display:    flex;
+  flex-direction: column;
+  align-items:  center;
+  align-content:  center;
+  width:      100vw;
+  height:     100vh;
+  padding:    10px;
+  padding-bottom: 200px;
+}
+.viewer {
+  flex: 1 1 auto;
+  width: 100%;
+  background:#EEE;
+}
+    </style>
+</head>
+<body>
+<model-viewer class="viewer" src="team3/TEAM3.gltf" ios-src="team3/TEAM3.usdz" ar ar-scale="auto" ar-status="not-presenting" alt="<INSERISCI TITOLO>" camera-controls >
+  <button slot="ar-button" style="background-color: white; width: 300px; height: 120px; font-size: 40px; font-weight: bold; border-radius: 20px; border: none; position: absolute; top: 16px; right: 16px; ">
+          Activate AR
+  </button>
+</model-viewer>
+</body>
+</html>

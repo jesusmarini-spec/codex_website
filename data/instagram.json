@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ig-post-001",
+    "caption": "XR-ready outsole test using Moon Rabbit's adaptive lattice blocks.",
+    "mediaUrl": "/img/project7.png",
+    "timestamp": "2024-11-05T09:00:00Z",
+    "permalink": "https://www.instagram.com/p/placeholder1/"
+  },
+  {
+    "id": "ig-post-002",
+    "caption": "CAE stress map overlay for Puma Xetic runner v3. Lighting by MIT Design Lab pipeline.",
+    "mediaUrl": "/img/project13.jpg",
+    "timestamp": "2024-10-21T18:30:00Z",
+    "permalink": "https://www.instagram.com/p/placeholder2/"
+  },
+  {
+    "id": "ig-post-003",
+    "caption": "AR-ready Unity scene for in-store customization. DE2 team prototype, Milan.",
+    "mediaUrl": "/img/project10.png",
+    "timestamp": "2024-09-12T15:10:00Z",
+    "permalink": "https://www.instagram.com/p/placeholder3/"
+  }
+]

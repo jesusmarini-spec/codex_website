@@ -1,0 +1,46 @@
+[
+  {
+    "id": "moon-rabbit-sprint-system",
+    "title": "Moon Rabbit sprint system for computational footwear",
+    "date": "2024-11-18",
+    "readTime": 6,
+    "tags": ["computational-design", "workflow"],
+    "heroImage": "/img/project6.png",
+    "heroAlt": "Moon Rabbit Adaptive Lab sprint whiteboard with CAD overlays",
+    "excerpt": "Mapped out a **four week sprint** that links athlete scans, CAE feature extraction, and Knitbody prototypes. Highlights include a Rhino.Compute tool for tagging load cases and a Notion API bridge that syncs FEA checkpoints to project management boards.",
+    "content": "# Moon Rabbit sprint system for computational footwear\n\n## Why build this now\nParity across biomechanics, CAE, and marketing timelines was the recurring blocker during 2024 launches. The sprint kit keeps athlete footwear briefs tangible even when the team spans Milan, Boston, and Seoul.\n\n## Sprint rails\n1. **Week 01 – Data intake**\n   - Capture athlete scans + force plate baselines\n   - Push metadata into Notion and auto tag video interviews\n2. **Week 02 – CAE synthesis**\n   - Rhino.Compute definition translates load cases into parametric tags\n   - GH Player package exports a *review-ready* viewport bundle for stakeholders\n3. **Week 03 – Proto sampling**\n   - Knitbody and lattice variants tracked in Airtable; QR reference baked into the print\n4. **Week 04 – Shareback**\n   - Unity showroom session with volumetric overlays; capturing Loom recaps becomes mandatory\n\n> Every prototype must include a parametric QR referencing the iteration ID + recap link.\n\n## Toolchain callouts\n- Azure Functions forward data between WearWorks sensors and Airtable without exposing tokens.\n- Zapier automation pings CAE channel when a Loom recap lands, so engineers watch before the stand-up.\n\nNext: anonymize the dataset and publish select benchmarks so future collabs can benchmark against Moon Rabbit baselines."
+  },
+  {
+    "id": "biomechanics-lab-notes",
+    "title": "Biomechanics lab notes from Milan running sessions",
+    "date": "2024-10-02",
+    "readTime": 4,
+    "tags": ["biomechanics", "innovation"],
+    "heroImage": "/img/project1.png",
+    "heroAlt": "Biomechanics heat map overlay on a basketball shoe",
+    "excerpt": "Captured dual force plate sessions with a **custom Python logger** and streamed them to a Grasshopper definition that suggests midsole lattice edits. Posting the workflow here before it graduates into a polished case study.",
+    "content": "# Milan lab notes\n\nTwo set-ups ran concurrently: a dual force-plate runway and a motion-capture rig pointed at the ankle complex. A Python logger (built on `bleak`) streamed raw IMU packets into Rhino inside of 300 milliseconds.\n\n### Highlights\n- Sharing raw curves inside a touch UI let athletes annotate peaks themselves — faster than post-session surveys.\n- A clash-detection script compared orthotics against upcoming uppers, reducing resample loops by one full sprint.\n- Captured **111 GB** of volumetric data. Compressing via Draco maintained enough fidelity for Unity viz in Quest headsets.\n\nFull case study lands after the partner’s legal pass, so this article is the interim drop."
+  },
+  {
+    "id": "ai-workbench",
+    "title": "AI workbench for cross-team handoffs",
+    "date": "2024-09-12",
+    "readTime": 7,
+    "tags": ["workflow", "innovation"],
+    "heroImage": "/img/project3.png",
+    "heroAlt": "Interface mock of AI workbench connecting Notion and Rhino",
+    "excerpt": "Prototyped a **Notion ↔ Rhino ↔ Azure OpenAI** handoff where prompts inherit project metadata. The assistant drafts test plans, while Grasshopper scripts convert output into CAD-ready curves.",
+    "content": "## Workbench anatomy\n- Notion serves as the single source of briefs, carrying structured metadata.\n- Azure OpenAI gets a *system prompt* infused with that metadata and returns QA plans.\n- A Rhino script parses the plan, spawns geometry placeholders, and flags manufacturability risks.\n\nThe entire chain already caught two manufacturing issues before we cut physical prototypes. Once the Unity showroom hooks in, clients will request headset tweaks while the AI logs changes + updates CAD.\n"
+  },
+  {
+    "id": "xr-field-lab",
+    "title": "XR field lab for footwear testing",
+    "date": "2024-08-19",
+    "readTime": 8,
+    "tags": ["innovation", "computational-design"],
+    "heroImage": "/img/project7.png",
+    "heroAlt": "XR prototype being tested on the field",
+    "excerpt": "Brought a mobile XR rig to the track so athletes could inspect stress maps in-situ. Captured the workflow with process photos and Unity screenshots.",
+    "content": "# XR field lab recap\n\nWe transformed a pop-up tent into an XR lab so athletes could review computational insights without leaving the track.\n\n![Mobile rig on the track](/img/Project7/7port-1.png)\n\n## Capture loop\n1. Scan the foot + shoe combo with a mobile lidar rig\n2. Run the CAE script onsite to produce the pressure heatmap\n3. Visualize through a Unity WebGL viewer running on a tablet\n\n<figure>\n  <img src=\"/img/project6.png\" alt=\"CAE heatmap overlay\">\n  <figcaption>Inline CAE overlay pushed to the Unity viewer.</figcaption>\n</figure>\n\nThe Unity scene mirrors the one embedded on the site, so the same assets power field tests and remote reviews.\n\n![XR scene overview](/img/project10.png)\n\n## Notes\n- Battery pack + 5G router kept the rig live for 4 hours.\n- QR stickers on each prototype launch the article view (`/blog/article.html?id=xr-field-lab`) so teammates can revisit the context later.\n"
+  }
+]
