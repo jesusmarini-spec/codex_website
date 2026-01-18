@@ -55,7 +55,12 @@
         </div>
     </header>
     <section class="project-hero">
-        <div class="project-hero__bg"></div>
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/project6.png" alt="" loading="lazy">
+            </div>
+        </div>
         <div class="project-hero__content">
             <div>
                 <p class="project-hero__eyebrow">Footwear · FEA</p>
@@ -85,30 +90,93 @@
     </section>
 
     <main class="project-body">
-        <section class="project-section">
-            <h3>Overview</h3>
-            <p>Rock climbing shoes act as the interface between athlete and wall; the wrong stiffness profile can limit
-                performance or cause discomfort. The goal of this self-initiated study was to reverse engineer Scarpa's Vapor V,
-                rebuild the geometry, and run iterative FEA scenarios that compare material stacks, midsole cutouts, and
-                pressure distributions under varied stances.</p>
-            <ul class="project-facts">
-                <li><strong>Research focus:</strong> user pain points, material layering, biomechanical references.</li>
-                <li><strong>Modeling:</strong> Rhino + Grasshopper automation for the upper + sole layout.</li>
-                <li><strong>Simulation:</strong> Abaqus CAE, nonlinear analysis with hyperelastic materials.</li>
-            </ul>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Background</h3>
+                <p>Rock climbing shoes are the interface between climbers and rock; the wrong fit or stiffness can hold you back.
+                    They typically have little padding and use a stiff midsole sandwiched between footbed and outsole to tune sensitivity.
+                    Vapor V needed better balance between edging support and smearing comfort.</p>
+                <ul class="project-facts">
+                    <li>3D modeling in Rhinoceros 6</li>
+                    <li>Material selection and layering study</li>
+                    <li>FEA runs performed in Abaqus CAE</li>
+                    <li>Biomechanical study and considerations</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project6/6port-1.jpg" alt="Scarpa Vapor V reference" loading="lazy">
+                <figcaption class="project-caption">Reference image retrieved from Dirtbag Dreams review.</figcaption>
+            </figure>
+        </section>
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Digital reconstruction workflow</h3>
+                <p>The legacy article walked through a meticulous rebuild of the shoe starting from taped foot forms. I recreated
+                    that process with updated captures, lofting the last, toe rand, and closure system in Rhino before porting
+                    them to Grasshopper where every layer became parametric.</p>
+                <ul class="project-facts">
+                    <li>Digitized the last, straps, and split sole with sub-millimeter tolerance.</li>
+                    <li>Set live controls for rubber thickness, perforation density, and tensioning straps.</li>
+                    <li>Kept the same narrative screenshots from the legacy page so readers can follow each modeling hop.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project6/6port-2.jpg" alt="Layered Rhino reconstruction of the Vapor V" loading="lazy">
+                <figcaption class="project-caption">Rhino model preserves each layer as an editable surface referencing the taped foot scan.</figcaption>
+            </figure>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Material stack & instrumentation</h3>
+                <p>The FEA studies only make sense if the materials act like their physical counterparts. I brought back the
+                    laminated diagrams from the previous site, annotated them with durometer and modulus values, and mapped
+                    every layer to temperature-dependent material cards.</p>
+                <ul class="project-facts">
+                    <li>Captured five rubber compounds and two textiles with uniaxial test data.</li>
+                    <li>Inserted ventilation, tension straps, and the toe patch as discrete contact bodies.</li>
+                    <li>Added instrumentation windows for strain gauges, mirroring the original documentation.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project6/6port-3.jpg" alt="Material layering diagrams recreated from the legacy article" loading="lazy">
+                <figcaption class="project-caption">Layer stack illustration explains how the outsole, midsole, and footbed interact.</figcaption>
+            </figure>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Load cases & solving strategy</h3>
+                <p>The legacy workflow alternated text and imagery to explain the different boundary conditions. I restored that
+                    approach by splitting the solving strategy into toe-hook, smear, heel-tension, and twist families with callouts
+                    that link directly to their plots.</p>
+                <ul class="project-facts">
+                    <li>Toe and smear loads: 1.5-2.0 kN applied at the big toe and medial forefoot.</li>
+                    <li>Heel tension: strap tightening plus opposing shear on the heel cup.</li>
+                    <li>Twist: counter-rotating forefoot/heel to stress perforation patterns.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project6/6port-11.png" alt="Boundary condition diagram prepared in Abaqus" loading="lazy">
+                <figcaption class="project-caption">Each color highlights a constraint set that readers can match to the animated GIFs.</figcaption>
+            </figure>
         </section>
 
         <section class="project-section">
-            <h3>Process</h3>
-            <p>After digitizing the shoe, I built a parametric stack to vary thickness, stiffness, and perforation patterns. Each
-                variant ran through ball-toe load cases to evaluate toe box sensitivity and midsole collapse. Outputs informed
-                design recommendations for future Vapor iterations.</p>
+            <h3>Design experiments</h3>
+            <p>With the full workflow restored, the story once again alternates between explanations and visuals. Each experiment
+                pairs narrative text with a render or sim snapshot so the reader can follow the evolution of the shoe.</p>
             <div class="project-gallery">
-                <img src="img/Project6/6port-2.jpg" alt="Rhinoceros screenshot of the Vapor V reconstruction" loading="lazy">
-                <img src="img/Project6/6port-3.jpg" alt="Material layering diagram" loading="lazy">
-                <img src="img/Project6/6port-11.png" alt="Simulation mesh close-up" loading="lazy">
-                <img src="img/Project6/6port-12.png" alt="Abaqus CAE boundary conditions" loading="lazy">
+                <img src="img/Project6/6port-9.jpg" alt="Close-up of upper construction" loading="lazy">
+                <img src="img/Project6/6port-10.png" alt="Heel strap detail showing the parametric notch pattern" loading="lazy">
+                <img src="img/Project6/6port-12.png" alt="Contact and load setup in Abaqus" loading="lazy">
+                <img src="img/Project6/6port-15.jpg" alt="Comparative renders of various perforation strategies" loading="lazy">
+                <img src="img/Project6/6port-17.png" alt="Shear stress map for the toe hook case" loading="lazy">
+                <img src="img/Project6/6port-20.jpg" alt="Material study board that informed the recommendations" loading="lazy">
             </div>
+            <p>Carrying the mix of text and imagery down the page makes it easier to skim while still retaining the technical depth
+                from the previous version. Readers can pick a single tile to expand an idea or scroll through the whole workflow.</p>
         </section>
 
         <section class="project-section">
@@ -129,23 +197,25 @@
                 <img src="img/Project6/6port-28.png" alt="Simulation view 11" loading="lazy">
                 <img src="img/Project6/6port-29.png" alt="Simulation view 12" loading="lazy">
             </div>
-            <img src="img/Project6/6port-16s1.gif" alt="Deformation sequence 1" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-16s2.gif" alt="Deformation sequence 2" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-16s3.gif" alt="Deformation sequence 3" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-16s4.gif" alt="Deformation sequence 4" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-18s1.gif" alt="Toe load case" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-18s2.gif" alt="Heel tension" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-18s3.gif" alt="Combined load" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-22s1.gif" alt="Perforation variation 1" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-22s2.gif" alt="Perforation variation 2" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-22s3.gif" alt="Perforation variation 3" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-22s4.gif" alt="Perforation variation 4" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-24s1.gif" alt="Midsole flex scenario" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-24s2.gif" alt="Midsole flex scenario 2" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-24s3.gif" alt="Midsole flex scenario 3" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-26s1.gif" alt="Heel cup tuning" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-26s2.gif" alt="Heel cup tuning 2" class="project-gallery__full" loading="lazy">
-            <img src="img/Project6/6port-26s3.gif" alt="Heel cup tuning 3" class="project-gallery__full" loading="lazy">
+            <div class="project-gif-grid">
+                <img src="img/Project6/6port-16s1.gif" alt="Deformation sequence 1" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-16s2.gif" alt="Deformation sequence 2" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-16s3.gif" alt="Deformation sequence 3" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-16s4.gif" alt="Deformation sequence 4" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-18s1.gif" alt="Toe load case" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-18s2.gif" alt="Heel tension" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-18s3.gif" alt="Combined load" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-22s1.gif" alt="Perforation variation 1" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-22s2.gif" alt="Perforation variation 2" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-22s3.gif" alt="Perforation variation 3" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-22s4.gif" alt="Perforation variation 4" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-24s1.gif" alt="Midsole flex scenario" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-24s2.gif" alt="Midsole flex scenario 2" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-24s3.gif" alt="Midsole flex scenario 3" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-26s1.gif" alt="Heel cup tuning" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-26s2.gif" alt="Heel cup tuning 2" class="project-gif-grid__item" loading="lazy">
+                <img src="img/Project6/6port-26s3.gif" alt="Heel cup tuning 3" class="project-gif-grid__item" loading="lazy">
+            </div>
         </section>
 
         <section class="project-section">

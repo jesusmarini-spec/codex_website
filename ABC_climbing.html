@@ -29,12 +29,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
@@ -56,97 +56,142 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-           <!-- <div class="img__background--port"style="background-image:url(img/Project3/portfolio-back.png)"></div>-->
-          <!-- <div> <video src="img/Project7/Pollar Roller Promo.mp4" autoplay loop muted></video></div>-->
-            <div class="video__container">
-               <video id="videoBG" class="video__wrapper" src="img/Project3/Intro_Video.mp4" autoplay loop muted></video>
-               <img src="img/project3.png" alt="" class="back_img">  
+
+    <section class="project-intro-video" aria-label="ABC Climbing intro video">
+        <div class="project-intro-video__media">
+            <video class="project-intro-video__player" src="img/Project3/Intro_Video.mp4" autoplay muted loop playsinline></video>
+            <div class="project-intro-video__label">
+                <span class="project-intro-video__pill">Interactive intro</span>
+                <p>Preview the adaptive wall choreography before diving into the case study.</p>
             </div>
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>Interaction Design</strong></h3>
+        </div>
+    </section>
+
+    <section class="project-hero project-hero--has-intro">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/project3.png" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">Interaction design · IoT</p>
+                <h1 class="project-hero__title">ABC Climbing · Adaptive Bouldering Coach</h1>
+                <p class="project-hero__lead">A smart climbing ecosystem that blends analog problems with digital guidance so intermediate climbers get personalized beta while gym owners refresh walls in minutes.</p>
+                <p class="project-hero__badge project-hero__badge--video">Interactive intro available</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">Concept & computational design lead</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >ABC Climbing</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Toolkit</div>
+                    <div class="project-meta__value">Rhino · Unity · Arduino · Adobe XD</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>Concept development</li>
-                        <li>3D modeling</li>
-                        <li>Unity Developer</li>
-                        <li>Prototyping & DFM</li>
-                        <li>Arduino implementation</li>
-                    </ul>
-                    <h3>Team</h3>
-                    <ul>
-                        <li>Jesus Marini Parissi</li>
-                        <li>Pierstefano Bellani</li>
-                        <li>Francesca Abbatantuono</li>
-                        <li>Alice de Nardi</li>
-                    </ul>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Timeline</div>
+                    <div class="project-meta__value">4 months · academic studio</div>
                 </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Team</div>
+                    <div class="project-meta__value">J. Marini · P. Bellani · F. Abbatantuono · A. de Nardi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Background</h3>
+                <p>Climbing progression relies on proprioception and reading beta that isn’t always obvious when you’re alone on the wall. ABC blends embedded hardware and coaching logic so climbers keep learning by climbing, not by switching to a laptop tutorial.</p>
+                <p>RGB LEDs + capacitive sensors transform each modular hold into a learning node: they light up to suggest sequences, collect time-on-hold data, and react when the climber hesitates.</p>
+                <ul class="project-facts">
+                    <li>Selected for Design x Designers 2019 · Milan Design Week.</li>
+                    <li>Ethnographic research + surveys with gym owners and athletes.</li>
+                    <li>Unity-driven prototype with live sensor data on a full wall module.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project3/3port-1.jpg" alt="ABC Climbing hero shot" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Research & insight synthesis</h3>
+            <p>We shadowed lessons, logged interviews, and mapped the tension between climbers needing hints when stuck and gym owners needing faster ways to refresh problems. Those insights shaped both the augmented holds and the operating system behind them.</p>
+            <div class="project-gallery">
+                <img src="img/Project3/3port-2.jpg" alt="Research board 1" loading="lazy">
+                <img src="img/Project3/3port-3.jpg" alt="Research board 2" loading="lazy">
+                <img src="img/Project3/3port-4.jpg" alt="Research board 3" loading="lazy">
+                <img src="img/Project3/3port-5.jpg" alt="Research board 4" loading="lazy">
             </div>
         </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <h1 class="abstract">Abstract</h1>
-        <p class="p_abstract"> ABC is an interactive system for climbing, it was developed to create a customized experience for intermediate level climbers and let them develop their skills in the most effective way. Thanks to RGB leds and capacitive sensors embedded in the holds, ABC is able to generate new paths, collect and analyze data and generate suggestions and feedbacks for the climber. <br> <br>
-            We collected qualitative and quantitative data via surveys, inteviews, observation, shadowing and on field training. We then tried to convey both climbers and gym owners needs. The first wanted and needed more hints when got stucked, while the second wished a way to change the paths in an easier and faster way than doing it manually hold by hold. <br> <br>
-            Project selected to be presented in Milano Design week.
-        </p>
-        <h1 class="award">Design x Designers 2019</h1>
-        <img src="img//Project3/3port-1.jpg" alt="" class="port__img">
-        <h3 class="parag_title">Problem setting</h3>
-        <p class="p_abstract">
-            Climbing is one of the hardest sports because it needs something named “proprioception” that is the sense of self-moving and body position. <br><br>
-            For this beginning and keep climbing becomes harder and harder, reason why most of the products or the initial climbing path are market with suggestions, color, or lights. A mix between digital and analog solution. <br><br>
-            So, this project starts by asking what the best training is to learn to climb properly. All of them agreed that you learn climbing by climbing. This became our focus point that guided us through the entire project. <br><br>
-        </p>
-        <h3 class="parag_title">Research</h3>
-        <img src="img//Project3/3port-2.jpg" alt="" class="port__img3">
-        <img src="img//Project3/3port-3.jpg" alt="" class="port__img3">
-        <img src="img//Project3/3port-4.jpg" alt="" class="port__img3">
-        <img src="img//Project3/3port-5.jpg" alt="" class="port__img3">
-        <h3 class="parag_title">Brief</h3>
-        <p class="p_abstract">
-            Focusing on <strong>indoor climbing</strong>, develop an interactive system in order to improve an <strong>intermediate</strong> climber <strong>body position</strong> and <strong>grabbing</strong> of the hand by a customizable path trought physical holds and <strong>augmented</strong> experience. <br>
-        </p>
-        <img src="img//Project3/3port-6.jpg" alt="" class="port__img3">
-        <h3 class="parag_title">Product architecture</h3>
-        <img src="img//Project3/3port-7.jpg" alt="" class="port__img3">
-        <h3 class="parag_title">Design</h3>
-        <p class="p_abstract">
-            The final design is a module-based system set. First, to achieve more versatility was necessary to create a changing tool with the capability of changing the hold shape. To get this, we designed a set of holds that contain different main shapes of climbing holds (Crimps, slopers, jugs, etc.). In order to show or highlight the path each of this hold contains a RGD LEDs sub-division embedded in a transparent PU resin. So, like this the climber can choose to train a specific set of skills or ability.
-        </p>
-        <img src="img//Project3/3port-8.gif" alt="" class="port__img3">
-        <p class="p_abstract">
-            Embedded in the hold there are different parts, from capacitive sensor used to detect the climber position and holding time, to a 360 connection between the hold and wall, this to allow all possible degrees of rotation, versatility to change holds and providing data transfer and power supply.
-        </p>
-        <img src="img//Project3/3port-9.jpg" alt="" class="port__img3">
-        <img src="img//Project3/3port-10.jpg" alt="" class="port__img">
-        <img src="img//Project3/3port-14.jpg" alt="" class="port__img">
-        <p class="p_abstract">
-            The hold connection is a normal bold with a T-nut. The 360° ring that is attached to the wall, this allows the use of the NFC that is needed to recognize where each hold is located. 
-        </p>
-        <img src="img//Project3/3port-11.jpg" alt="" class="port__img">
-        <img src="img//Project3/3port-12.jpg" alt="" class="port__img">
-        <p class="p_abstract">
-            Finally, the ABC climbing app that helps to the climber to improve its experience, by having an interface to select the climbing path, collecting data and performance.
-        </p>
-        <img src="img//Project3/3port-13.jpg" alt="" class="port__img">
-        <h3 class="parag_title">Climbing experience</h3>
-        <div class="video__container"> <video id="videoBG" class="video__wrapper" src="img/Project3/ABC_Climbing_1.mp4" autoplay loop muted></video></div>
-        <h3 class="parag_title">Prototype</h3>
-        <img src="img//Project3/3port-15.gif" alt="" class="port__img">
-        <img src="img//Project3/3port-17.jpg" alt="" class="port__img">
 
-        <h3 class="parag_title">Unity webgl</h3>
-        <p class="p_abstract"> <a href="Unity.html">Unity Demo</a></p>
-        <p class="p_abstract">Version 2.0 coming soon...</p>
-    </div>
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Brief distilled</h3>
+                <p>Focus on indoor bouldering, build a customizable physical-digital path that improves body position and grip choices for intermediate climbers, and ensure the experience can be refreshed without rebolting the entire wall.</p>
+                <p>The resulting experience mixes analog holds with augmented cues: LED segments pulse to suggest sequences, while sensors capture data for coaches.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project3/3port-6.jpg" alt="Project brief summary" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>System architecture</h3>
+            <p>Each hold is a module: translucent PU windows reveal LED guidance, capacitive sensors log grip quality, and the 360° collar channels both power and data. NFC tags let the system know exactly which hold sits where.</p>
+            <div class="project-gallery">
+                <img src="img/Project3/3port-7.jpg" alt="System diagram" loading="lazy">
+                <img src="img/Project3/3port-8.gif" alt="Hold morph animation" loading="lazy">
+                <img src="img/Project3/3port-9.jpg" alt="Exploded view" loading="lazy">
+                <img src="img/Project3/3port-10.jpg" alt="LED segmentation" loading="lazy">
+                <img src="img/Project3/3port-14.jpg" alt="LED detail" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Hardware details</h3>
+                <p>The T-nut bolt keeps compatibility with existing walls while a rotating ring locks the smart interface. Sensors detect hand placement and dwell time; NFC anchor points ensure the software understands the wall topology.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project3/3port-11.jpg" alt="Mounting detail" loading="lazy">
+                <img src="img/Project3/3port-12.jpg" alt="Electronics module detail" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Digital companion</h3>
+            <p>The ABC app combines route selection, live guidance, and post-session analytics. Climbers can request hints mid-route, while coaches push curated drills. The UI intentionally echoes analog route cards with layered data.</p>
+            <div class="project-gallery">
+                <img src="img/Project3/3port-13.jpg" alt="App mockups" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Climbing experience prototype</h3>
+            <p>Unity drove the LED choreography and sensor visualizations on a physical wall, letting us test adaptive coaching moments with climbers. The video below captures the interaction loop.</p>
+            <video class="project-gallery__full" src="img/Project3/ABC_Climbing_1.mp4" autoplay muted loop playsinline></video>
+        </section>
+
+        <section class="project-section">
+            <h3>Physical prototype & outcomes</h3>
+            <p>We machined the modular holds, cast translucent PU windows, and wired the electronics for on-wall testing. The pilot demonstrated how data-informed holds can keep climbers progressing and created a template for future smart wall deployments.</p>
+            <div class="project-gallery">
+                <img src="img/Project3/3port-15.gif" alt="Physical prototype testing" loading="lazy">
+                <img src="img/Project3/3port-17.jpg" alt="Installed module" loading="lazy">
+            </div>
+            <ul class="project-facts">
+                <li>Unity WebGL demo available for remote walkthroughs (<a href="Unity.html">View demo</a>, v2 coming soon).</li>
+                <li>Hardware + firmware documentation prepared for manufacturing partners.</li>
+                <li>Research book packaged for gym-owner conversations and sponsorship pitches.</li>
+            </ul>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer__email">
