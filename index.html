@@ -56,79 +56,155 @@
             </nav>
         </div>
     </header>
-    <!--Introduction-->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            <div class="name--intro"><strong>Jesus</strong></div>
-            <div class="lastname--intro"><strong> Marini Parissi</strong></div>              
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Computational Designer & Innovation</p>
-        <img src="img/Cv_picture_small.jpg" alt="my cv picture" class="intro__img">
-        <div class="section__title-parag">
-            <p>Jesus Marini Parissi, the founder and computational design engineer at <strong><a href="https://moonrabbitx.com/" text-decoration= none;>Moon Rabbit Adaptive Lab</strong></a> with 10+ years of professional work experience, holds an <strong>MSc in Design Engineering</strong> from Politecnico di Milano and a BSc in <strong>Mechatronics Engineering</strong> from Universidad Nacional Autonoma de Mexico. <br><br>
-                Specializing in <strong>data-driven computational design workflows</strong> and <strong>advancing CAE applications</strong>, he focuses on performance sports, fashion, and biomechanics.<br><br>
-
-                With a history of participation in prestigious innovation programs like <strong>Stanford ME310</strong> and a visiting student role at <strong>MIT Design Lab</strong>, Jesus has collaborated with major players in the field, including Ford, Huawei Aesthetic Research Center, ETH Zurich and PUMA Innovation Team. In 2022, he played a pivotal role in launching Samsung's first Computational Design Department through a groundbreaking pilot project.<br></p>
-
-        </div>
-        <!--
-        <div class="btn__resume">
-            <a href="https://drive.google.com/file/d/1yLNv3R3EJF9MpnAQoAf7jE8s1Nl_Vja2/view?usp=sharing" target="_blank">
-                <div class="btn resume">
-                    RESUME
+    <section class="hero" id="home">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Computational design systems</p>
+            <h1 class="hero__title">Jesus Marini Parissi</h1>
+            <p class="hero__lead">Design engineer guiding performance brands through digital-to-physical workflows:
+                parametric footwear, biomechanics labs, and XR proof-of-concept moments that win internal alignment.</p>
+            <div class="hero__chips">
+                <span>Moon Rabbit Adaptive Lab</span>
+                <span>MIT Design Lab alumni</span>
+                <span>XR + Unity 3D</span>
+            </div>
+            <div class="hero__cta">
+                <a class="btn" href="#work">Explore selected work</a>
+                <a class="btn btn--ghost" href="blog/index.html">Read the journal</a>
+            </div>
+            <div class="hero__meta">
+                <div>
+                    <p class="hero__meta-label">Performance briefs</p>
+                    <p class="hero__meta-value">40+</p>
                 </div>
-            </a>
-            
+                <div>
+                    <p class="hero__meta-label">Biomechanics sessions</p>
+                    <p class="hero__meta-value">110 GB+</p>
+                </div>
+                <div>
+                    <p class="hero__meta-label">XR demos shipped</p>
+                    <p class="hero__meta-value">18</p>
+                </div>
+            </div>
         </div>
-        -->
+        <div class="hero__media">
+            <img src="img/Cv_picture_small.jpg" alt="Portrait of Jesus Marini Parissi" class="hero__portrait">
+            <p class="hero__caption">Moon Rabbit Adaptive Lab · Milan, Italy</p>
+        </div>
     </section>
-    <!-- My services-->
-    <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">Computational Design Engineer Skills</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Product Design</h3>
-                <ul>
-                    <li class="service__list">Design thinking</li>
-                    <li class="service__list">Double diamond method</li>
-                    <li class="service__list">User Research</li>
-                    <li class="service__list">Emerging tech</li>
-                    <li class="service__list">User Experience</li>
-                    <li class="service__list">Rendering</li>
-                    <li class="service__list">Envision Design</li>
-                </ul>
-            </div><!-- service 1-->
-            <div class="service">
-                <h3><strong>Mechatronic Engineering</strong></h3>
-                <ul>
-                    <li class="service__list">Computational Design</li>
-                    <li class="service__list">FEA | CAE</li>
-                    <li class="service__list">3D modeling</li>
-                    <li class="service__list">Phygital Development</li>
-                    <li class="service__list">Material selection</li>
-                    <li class="service__list">Manufacturing</li>
-                    <li class="service__list">Prototyping</li>
-                    <li class="service__list">3D printing</li>
-                    <li class="service__list">Generative Design</li>
-                    <li class="service__list">Project Managment</li>
-                                    </ul>
-            </div><!-- service 2-->
-            <div class="service">
-                <h3>Interaction Design</h3>
-                <ul>
-                    <li class="service__list">IoT</li>
-                    <li class="service__list">Coding C#</li>
-                    <li class="service__list">Unity 3D</li>
-                    <li class="service__list">AR/VR/MR</li>
-                    <li class="service__list">UWP</li>
-                    <li class="service__list">HTML, CSS & JS</li>
-                    <li class="service__list">Raspberry pi</li>
-                    <li class="service__list">Arduino</li>                   
-
-                </ul>
-            </div><!-- service 3-->
+    <section class="blog-teaser" aria-labelledby="blog-teaser-title">
+        <div class="section-header">
+            <p class="section__subtitle section__subtitle--intro">Field notes</p>
+            <h2 id="blog-teaser-title" class="section__title">Latest from the journal</h2>
         </div>
-        <!--a href="#work" class="btn">Selected work</a-->
+        <div class="blog-teaser__grid">
+            <article class="blog-teaser__card">
+                <p class="blog-teaser__eyebrow">Moon Rabbit Lab</p>
+                <h3>Computational sprint system</h3>
+                <p>Mapping athlete scans → CAE tags → knit bodies with QR traceability for Puma briefs.</p>
+                <a class="btn btn--ghost" href="blog/article.html?id=moon-rabbit-sprint-system">Read article</a>
+            </article>
+            <article class="blog-teaser__card">
+                <p class="blog-teaser__eyebrow">Biomechanics</p>
+                <h3>Milan running sessions</h3>
+                <p>Linking dual force plates, Python loggers, and Grasshopper scripts to co-design with athletes.</p>
+                <a class="btn btn--ghost" href="blog/article.html?id=biomechanics-lab-notes">Open session notes</a>
+            </article>
+            <article class="blog-teaser__card">
+                <p class="blog-teaser__eyebrow">XR prototyping</p>
+                <h3>Field lab overlays</h3>
+                <p>Unity-powered pressure maps reviewed on-track with QR handoffs to the exec team.</p>
+                <a class="btn btn--ghost" href="blog/article.html?id=xr-field-lab">View field lab</a>
+            </article>
+        </div>
+    </section>
+    <section class="contact-cta" id="connect">
+        <div class="contact-cta__panel">
+            <p class="section__subtitle section__subtitle--intro">Engage</p>
+            <h2 class="section__title">Ready to activate a computational design sprint?</h2>
+            <p>Send a short brief, request a remote workshop, or book lab time in Milan. Each engagement starts with aligning business constraints to creative exploration.</p>
+            <div class="contact-cta__actions">
+                <a class="btn" href="mailto:design&#64;jmariniparissi.com">Share a brief</a>
+                <a class="btn btn--ghost" href="blog/index.html">Browse workflows</a>
+            </div>
+        </div>
+        <div class="contact-cta__details">
+            <div>
+                <p class="contact-cta__label">Base</p>
+                <p class="contact-cta__value">Milan · CET</p>
+            </div>
+            <div>
+                <p class="contact-cta__label">Focus</p>
+                <p class="contact-cta__value">Computational design · XR · CAE</p>
+            </div>
+            <div>
+                <p class="contact-cta__label">Availability</p>
+                <p class="contact-cta__value">Q2 2026 · Remote & on-site</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Brand collaborations">
+        <p class="trust-strip__label">Trusted by innovation teams at</p>
+        <div class="trust-strip__logos">
+            <span>PUMA Innovation</span>
+            <span>Ford Motor Company</span>
+            <span>MIT Design Lab</span>
+            <span>Huawei Aesthetic Research</span>
+            <span>Stanford ME310</span>
+        </div>
+    </section>
+
+    <section class="capabilities" id="services">
+        <div class="section-header">
+            <p class="section__subtitle section__subtitle--intro">Capabilities</p>
+            <h2 class="section__title">Computational design programs</h2>
+            <p class="section__subtitle section__subtitle--work">From research sprints to CAE-driven launches, each engagement blends engineering rigor with expressive interaction design.</p>
+        </div>
+        <div class="capability-grid">
+            <article class="capability-card">
+                <div class="capability-card__heading">
+                    <span class="capability-card__eyebrow">01 · Product systems</span>
+                    <h3>Performance product roadmaps</h3>
+                </div>
+                <p>Design thinking + computational foresight for footwear and wearables; orchestrated workshops align execs, designers, and engineers.</p>
+                <ul class="capability-tags">
+                    <li>Design thinking</li>
+                    <li>User research</li>
+                    <li>Envision design</li>
+                    <li>Emerging tech</li>
+                </ul>
+                <div class="capability-meta">12+ years / 40 briefs</div>
+            </article>
+            <article class="capability-card">
+                <div class="capability-card__heading">
+                    <span class="capability-card__eyebrow">02 · Computational CAE</span>
+                    <h3>Mechatronic & CAE pipelines</h3>
+                </div>
+                <p>Linking FEA, generative strategies, and prototyping so lattices, knit bodies, and molds are validated before tooling investments.</p>
+                <ul class="capability-tags">
+                    <li>FEA / CAE</li>
+                    <li>Generative design</li>
+                    <li>Manufacturing</li>
+                    <li>Prototyping</li>
+                </ul>
+                <div class="capability-meta">7 global labs connected</div>
+            </article>
+            <article class="capability-card">
+                <div class="capability-card__heading">
+                    <span class="capability-card__eyebrow">03 · Interaction & XR</span>
+                    <h3>Interaction + XR storytelling</h3>
+                </div>
+                <p>Turning research datasets into immersive prototypes—Unity, AR, IoT—for stakeholder buy-in and on-site athlete testing.</p>
+                <ul class="capability-tags">
+                    <li>Unity / XR</li>
+                    <li>IoT + sensors</li>
+                    <li>Rapid coding</li>
+                    <li>AR/VR/MR</li>
+                </ul>
+                <div class="capability-meta">18 XR demos shipped</div>
+            </article>
+        </div>
     </section>
     <!--About me-->
     <section class="about-me" id="about">
