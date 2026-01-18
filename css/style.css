@@ -893,6 +893,32 @@ header{
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     gap: 1.25rem;
 }
+.project-filters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.project-filter{
+    border: 1px solid rgba(5,5,10,0.2);
+    background: rgba(255,255,255,0.4);
+    color: var(--clr-dark);
+    padding: .4rem 1.1rem;
+    border-radius: 999px;
+    font-size: .85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    cursor: pointer;
+    transition: background 150ms ease, color 150ms ease, border 150ms ease;
+}
+.project-filter--active{
+    background: var(--clr-accent);
+    color: var(--clr-light);
+    border-color: var(--clr-accent);
+    box-shadow: 0 10px 25px rgba(76,125,255,0.3);
+}
 .project-card{
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.12);
@@ -945,6 +971,9 @@ header{
     font-size: .75rem;
     text-decoration: none;
     color: var(--clr-accent-secondary);
+}
+.project-card.is-hidden{
+    display: none;
 }
 
 .detail-timeline{
