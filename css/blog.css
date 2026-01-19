@@ -4,12 +4,18 @@
     min-height: 70vh;
     display: flex;
     align-items: center;
-    padding: 6rem 2rem 4rem;
+    padding: 6rem 2rem 5rem;
 }
 
 .blog-hero__content {
-    max-width: 960px;
-    margin: 0 auto;
+    max-width: 720px;
+    margin: 0;
+    width: 100%;
+}
+.blog-hero .section__title--intro{
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+    overflow-wrap: anywhere;
 }
 
 .blog-hero__lead {
@@ -22,6 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
 }
 
 .btn--ghost {
@@ -293,5 +300,11 @@
 
     .blog-card__image {
         height: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .blog-hero {
+        padding: 6rem 1.5rem 4rem;
+        min-height: auto;
     }
 }

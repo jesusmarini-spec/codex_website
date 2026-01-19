@@ -8,6 +8,7 @@ Portfolio hub for Jesus Marini Parissi highlighting computational design, indust
 - **Blog experience** (`/blog`) powered by JSON content, Markdown → HTML rendering, and stubbed social feeds for Instagram and LinkedIn integrations.
 - **Project detail templates** (`fea_climbing.html`, `ABC_climbing.html`) share the upgraded hero/meta system, structured sections, and optional intro-video module.
 - **Expanded case studies** now updated to the new layout (MIT Design Lab, Ford CAE, Xetic, Dot Shell, Nespresso, R2 Heater, Redstorm, Polar Roller, Airport Travel Assistant).
+- **Navigation revamp** with a floating pill header, improved mobile burger visibility, and aligned hero spacing across the blog.
 - **Article template** (`/blog/article.html`) hydrates full-length posts from the shared JSON dataset, including share buttons and tag chips.
 - **Shared styling/components** via `css/style.css`, `css/blog.css`, and lightweight vanilla JS in `js/index.js` plus `src/blog.js`.
 
