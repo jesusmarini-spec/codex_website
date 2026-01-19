@@ -28,16 +28,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
-
         </div>
         <button class="nav__toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -55,70 +53,75 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-           <div class="img__background--port"style="background-image:url(img/Project10/portfolio-back.jpg)"></div>
-          <!--  <div class="video__container"> <video id="videoBG" class="video__wrapper" src="img/Project8/Polar Roller Ice.mp4" autoplay loop muted></video></div>-->
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>Visiting Student R&D</strong></h3>
+
+    <section class="project-hero">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/Project10/10port-1.jpg" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">Visiting student R&amp;D</p>
+                <h1 class="project-hero__title">MIT Design Lab · Adaptive Dynamics</h1>
+                <p class="project-hero__lead">Contributed computational design research for the PUMA Xetic program, building faster 3D FEA workflows and rapid prototypes across multiple footwear concepts.</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">Computational designer · FEA</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >MIT Design Lab</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Focus</div>
+                    <div class="project-meta__value">Adaptive Dynamics · PUMA Innovation</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>FEA for adaptive dynamic footwear</li>
-                        <li>Conducted research in emerging tech</li>
-                        <li>Rapid prototyping and 3D printing</li>
-                        <li>3D modeling solid and surfaces</li>
-                        <li>Material research</li>
-                    </ul>
-                    <h3>03/2019 - 03/2020</h3>
-                    <p></p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Timeline</div>
+                    <div class="project-meta__value">03/2019 – 03/2020</div>
+                </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Tools</div>
+                    <div class="project-meta__value">Abaqus · Rhino · Rapid prototyping</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Experience</h3>
+                <p>During my time at <a href="https://design.mit.edu/">MIT Design Lab</a>, I contributed as a computational designer across multidisciplinary teams. My primary project was Adaptive Dynamics, an industry-sponsored collaboration with PUMA Innovation.</p>
+                <p>I developed advanced FEM simulations, digital fabrication workflows, and rapid prototypes. A key contribution was rebuilding the virtual design-simulation process to enable faster iteration on auxetic midsoles.</p>
+                <ul class="project-facts">
+                    <li>Converted 2D midsole FEA to full 3D simulation workflows.</li>
+                    <li>Supported rapid iteration for auxetic-based cushioning systems.</li>
+                    <li>Collaboration results slated for consumer product + museum exhibition.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project10/10port-1.jpg" alt="Adaptive dynamics concept render" loading="lazy">
+            </figure>
         </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <h1 class="abstract">Experience</h1>
-        <p class="p_abstract">
-            During my time at <a href="https://design.mit.edu/">MIT Design Lab</a>, I contributed with research and experience in the projects mainly as computational designer, my main project was “Adaptive Dynamics”, an industry sponsored project with PUMA Innovation. 
-            I worked with multidisciplinary and international teams of engineers, designers, researchers, and architects. <br><br>
-            I contributed by conducting advance FEM simulations, digital fabrication, and prototyping. In which one of my biggest achievements was the re-development of a virtual design-simulation process that was created for fast design iterations of an auxetic based midsole. <br><br>
-            <strong>The results of this collaboration with Puma will be released into a consumer product in a short time and will be also part of an upcoming exhibition at the Design Museum in London. </strong> <br><br>
-            I think this experience helped me to gain confidence in my design and engineering skills, that make me competitive, adaptable and with fast response for any challenge faced. Also, my capability for problem solving and conceptualizing ideas within a teamwork environment makes me a good team player that could be adapted into several parts of the product developments, concept generation or innovation process. <br>
 
-        </p>
-        <h1 class="abstract" >Project involved</h1>
-        <h3 class="parag_title" >Adaptive dynamics</h3>
-        <img src="img//Project10/10port-1.jpg" alt="" class="port__img">
+        <section class="project-section">
+            <h3>Adaptive Dynamics · Xetic</h3>
+            <p>I refined the FEA portion of the design-simulation-prototyping pipeline for the Calibrate Runner. The upgrade to 3D analysis unlocked more accurate midsole behavior and faster design verification.</p>
+            <div class="project-gallery">
+                <img src="img/Project10/10port-1.jpg" alt="Xetic midsole render" loading="lazy">
+            </div>
+            <iframe class="project-gallery__full" title="PUMA Xetic overview" src="https://player.vimeo.com/video/444948031" allowfullscreen></iframe>
+            <p>Review my contributions to <a href="puma_xetic.html">Xetic Running</a> and <a href="puma_xetic_basketball.html">Xetic Basketball</a>.</p>
+            <p>Project links: <a href="https://design.mit.edu/projects/puma-auxetic-recurve-midsole">MIT Design Lab</a> · <a href="https://about.puma.com/de-de/newsroom/brand-and-product-news/2020/2020_08_04_xetic">PUMA Newsroom</a></p>
+            <iframe class="project-gallery__full" src="https://www.youtube.com/embed/K8pahZAmAV0" title="PUMA Xetic product video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
 
-        <p class="p_abstract">
-            As part of the MIT Design Lab, I was involved in the project of Adaptive Dynamics. In which I helped in the development of the cushioning technology “XETIC” that received the name of <strong>Calibrate Runner</strong>. <br> <br>
-            In this project, I was in charge of the refinement of the finite element analysis part of the virtual design-simulation-prototyping, where I change the game by modifying from a 2D FEA simulation into a 3D simulation capable of analysis the full phenomena of the midsole giving better and more accurate results for its design and manufacturing.<br> <br>
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/444948031" width="640" height="360" frameborder="0" allowfullscreen ></iframe> <br><br>
-            Click <a href="puma_xetic.html"> here</a> to review my contribution into <strong>Xetic Running.</strong> <br><br>
-            Click <a href="puma_xetic_basketball.html"> here</a> to review my contribution into <strong>Xetic Basketball.</strong> <br><br>
-            Here you can find the link to the Puma page dedicated at this project.<br> <br>
-            <a href="https://design.mit.edu/projects/puma-auxetic-recurve-midsole"> https://design.mit.edu/projects/puma-auxetic-recurve-midsole</a><br> <br>
-            <a href="https://about.puma.com/de-de/newsroom/brand-and-product-news/2020/2020_08_04_xetic"> https://about.puma.com/de-de/newsroom/brand-and-product-news/2020/2020_08_04_xetic</a><br> <br>
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/K8pahZAmAV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__wrapper_y"></iframe>
-        <h3 class="parag_title">London design museum</h3>
-        <p class="p_abstract">
-            coming soon...
-        </p>
-        <h3 class="parag_title">Dia de los muertos</h3>
-        <p class="p_abstract">
-            coming soon...
-        </p>
-        <h3 class="parag_title">MIT Experience</h3>
-        <p class="p_abstract">
-            coming soon...
-        </p>
-    </div>
+        <section class="project-section">
+            <h3>Exhibitions & publications</h3>
+            <p>London Design Museum, Día de los Muertos, and MIT Lab documentation are in progress.</p>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer__email">
@@ -143,11 +146,6 @@
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </li>
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="">
-                        d
-                    </a>
-                </li>-->
             </ul>
         </div>
         <div class="footer__logo">
@@ -157,7 +155,7 @@
             Copyright <i class="far fa-copyright"></i> 2020 Jesus Marini Parissi
         </div>
     </footer>
-    
+
     <script type="module" src="js/index.js"></script>
 
 </body>

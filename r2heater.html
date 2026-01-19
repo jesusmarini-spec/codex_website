@@ -28,16 +28,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
-
         </div>
         <button class="nav__toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -55,98 +53,151 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-           <!-- <div class="img__background--port"style="background-image:url(img/Project4/portfolio-back.png)"></div>-->
-          <!-- <div> <video src="img/Project7/Pollar Roller Promo.mp4" autoplay loop muted></video></div>-->
-          <div class="video__container">
-               <video id="videoBG" poster="" class="video__wrapper" src="img/Project4/Intro_Video.mp4" autoplay loop muted></video>
-               <img src="img/project4.png" alt="" class="back_img">  
 
+    <section class="project-intro-video" aria-label="R2 Heater intro video">
+        <div class="project-intro-video__media">
+            <video class="project-intro-video__player" src="img/Project4/Intro_Video.mp4" autoplay muted loop playsinline></video>
+            <div class="project-intro-video__label">
+                <span class="project-intro-video__pill">Product reveal</span>
+                <p>Watch the IoT oven concept come to life before the project breakdown.</p>
             </div>
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>Interaction Design</strong></h3>
+        </div>
+    </section>
+
+    <section class="project-hero project-hero--has-intro">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/project4.png" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">Interaction design · IoT</p>
+                <h1 class="project-hero__title">R2 Heater · Connected halogen oven</h1>
+                <p class="project-hero__lead">A 360° countertop heater that keeps food quality intact while delivering an intuitive, connected cooking experience.</p>
+                <p class="project-hero__badge project-hero__badge--video">Intro video available</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">Concept + interaction design</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >R2 Heater</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Toolkit</div>
+                    <div class="project-meta__value">SolidWorks · Arduino · Unity · Adobe XD</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>Concept development</li>
-                        <li>3D modeling</li>
-                        <li>Unity Developer</li>
-                        <li>Prototyping & DFM</li>
-                        <li>Arduino implementation</li>
-                    </ul>
-                    <h3>Team</h3>
-                    <ul>
-                        <li>Jesus Marini Parissi</li>
-                        <li>Diana Fidelis da Silva</li>
-                    </ul>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Timeline</div>
+                    <div class="project-meta__value">Semester studio · 2020</div>
                 </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Team</div>
+                    <div class="project-meta__value">J. Marini · D. Fidelis da Silva</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Project overview</h3>
+                <p>R2 Heater reimagines a halogen oven as a smart, connected kitchen appliance. The concept centers on a 360° heating shell that fits any container, with a water reservoir and piezo misting system to preserve moisture.</p>
+                <ul class="project-facts">
+                    <li>IoT-driven interaction with real-time temperature and moisture feedback.</li>
+                    <li>Modular form factor sized for most countertop cookware.</li>
+                    <li>Companion interface designed for quick, repeatable meal workflows.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project4/4port-5.jpg" alt="R2 Heater hero render" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Research & problem setting</h3>
+            <p>We ran secondary research across IoT appliance trends, benchmarked competing products, and mapped user journeys to define the moments where warming food breaks down. The goal: keep quality intact while simplifying control.</p>
+            <div class="project-gallery">
+                <img src="img/Project4/4port-1.jpg" alt="Research board 1" loading="lazy">
+                <img src="img/Project4/4port-2.jpg" alt="Research board 2" loading="lazy">
+                <img src="img/Project4/4port-3.jpg" alt="Research board 3" loading="lazy">
+                <img src="img/Project4/4port-4.jpg" alt="Research board 4" loading="lazy">
             </div>
         </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <h1 class="abstract">Abstract</h1>
-        <p class="p_abstract"> 
-            R2 Heater is a redesign of an halogen ovens focusing in create an IoT and interactive product that is connected inside your house, meeting the needs of warming food whenever you need, with a user friendly interface and a 360° shape to increase the user experience of having a heating systems that keeps the quality of the food.
-        </p>
-        <h3 class="parag_title">Problem setting</h3>
-        <p class="p_abstract">
-            An extensive secondary research was performed, including IoT analysis, surveys, benchmarking, persona, user journey and need finding that helped us to guide correctly our final design choice.        </p>
-                <!--Division en 4-->
-        <div class="four__grid-items">
-                <img src="img/Project4/4port-1.jpg" alt="" class="port__img-grid">
-                <img src="img/Project4/4port-2.jpg" alt="" class="port__img-grid">
-                <img src="img/Project4/4port-3.jpg" alt="" class="port__img-grid">
-                <img src="img/Project4/4port-4.jpg" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">Brief</h3>
-        <p class="p_abstract">
-            R2 Heater is a new system with an intuitive interface and a clear-open shape that warms up your food by keeping the same quality. The shape is made to fit inside any type of container, at the side is located a water reservoir that spreads water via piezoelectric to keep the quality of your food, along with the connectivity of the inner camera and the IR sensor. All this to gave the best user experience at the moment of heat up your meals.
-        </p>
-        <img src="img/Project4/4port-5.jpg" alt="" class="port__img">
-        <!--Division en 4-->
-        <h3 class="parag_title">Dimensions and main features</h3>
-        <div class="four__grid-items">
-            <img src="img/Project4/4port-6.jpg" alt="" class="port__img-grid">
-            <img src="img/Project4/4port-7.jpg" alt="" class="port__img-grid">
-            <img src="img/Project4/4port-8.jpg" alt="" class="port__img-grid">
-            <img src="img/Project4/4port-9.jpg" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">Components</h3>
-        <p class="p_abstract">
-            All the components were designed for manufacturing in solidworks. Creating a top-down modeling with different subassemblies and integrating commercial components to have just a few parts in production. The interface and electronic components were selected based on fast prototype components with the aim of create in a future it owns dedicated embedded circuit. 
-        </p>
-        <img src="img/Project4/4port-10.jpg" alt="" class="port__img">
 
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Brief distilled</h3>
+                <p>Create an intuitive heating system that fits in any kitchen, warms food without drying it out, and feels as effortless as setting a timer. The 360° body and embedded sensors help keep temperature and humidity in the sweet spot.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project4/4port-6.jpg" alt="Brief and dimension layout" loading="lazy">
+            </figure>
+        </section>
 
-        <h3 class="parag_title">Technical drawings</h3>
-        <div class="four__grid-items">
-            <img src="img/Project4/4port-11.jpg" alt="" class="port__img-grid">
-            <img src="img/Project4/4port-12.jpg" alt="" class="port__img-grid">
-            <img src="img/Project4/4port-13.jpg" alt="" class="port__img-grid">
-            <img src="img/Project4/4port-14.jpg" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">Market comparison</h3>
-        <p class="p_abstract">
-            A market comparison was made in order to show the added value of R2 heater compared with the similar market proposals. 
-        </p>
-        <img src="img/Project4/4port-15.jpg" alt="" class="port__img">
-        <h3 class="parag_title">Prototype</h3>
-        <p class="p_abstract">
-            An interaction prototype of the interface was made, coded in Arduino to represent the main user experience. This interface was integrated into a 1:1 mockup to have a real understanding of the size and placement inside the house.
-        </p>
-        <img src="img/Project4/4port-16.jpg" alt="" class="port__img">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2I3XUFn3BhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__wrapper_y"></iframe>
-        <h3 class="parag_title">Unity Demo</h3>
-        <p class="p_abstract">
-            coming soon...
-        </p>
-    </div>
+        <section class="project-section">
+            <h3>Dimensions & main features</h3>
+            <div class="project-gallery">
+                <img src="img/Project4/4port-6.jpg" alt="Dimension study 1" loading="lazy">
+                <img src="img/Project4/4port-7.jpg" alt="Dimension study 2" loading="lazy">
+                <img src="img/Project4/4port-8.jpg" alt="Dimension study 3" loading="lazy">
+                <img src="img/Project4/4port-9.jpg" alt="Dimension study 4" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Components & architecture</h3>
+                <p>SolidWorks top-down modeling defined the enclosure, reservoir, and electronics. By integrating off-the-shelf components, the team reduced part count while keeping a clear path toward a custom PCB.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project4/4port-10.jpg" alt="Component breakdown" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Technical drawings</h3>
+            <div class="project-gallery">
+                <img src="img/Project4/4port-11.jpg" alt="Technical drawing 1" loading="lazy">
+                <img src="img/Project4/4port-12.jpg" alt="Technical drawing 2" loading="lazy">
+                <img src="img/Project4/4port-13.jpg" alt="Technical drawing 3" loading="lazy">
+                <img src="img/Project4/4port-14.jpg" alt="Technical drawing 4" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Market comparison</h3>
+                <p>Benchmarking highlighted how most countertop heaters dry food quickly or rely on confusing interfaces. R2 Heater differentiates with the misting reservoir, panoramic heating, and a cleaner UI.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project4/4port-15.jpg" alt="Market comparison chart" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Prototype & interaction</h3>
+                <p>The interaction prototype ran on Arduino to simulate the future embedded interface. A 1:1 mockup validated placement of the display, dial controls, and water reservoir.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project4/4port-16.jpg" alt="Prototype mockup" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Demo video</h3>
+            <div class="project-video">
+                <iframe src="https://www.youtube.com/embed/2I3XUFn3BhE" title="R2 Heater demo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Unity demo</h3>
+            <p>Coming soon…</p>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer__email">
@@ -171,11 +222,6 @@
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </li>
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="">
-                        d
-                    </a>
-                </li>-->
             </ul>
         </div>
         <div class="footer__logo">

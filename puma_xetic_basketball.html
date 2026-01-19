@@ -28,12 +28,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
@@ -55,48 +54,59 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-            <div class="img__background--port"style="background-image:url(img/Project1/portfolio-back.png)"></div>
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>Master's thesis 110/110</strong></h3>
+
+    <section class="project-hero">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/Project1/1port-1.jpg" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">Master’s thesis · 110/110</p>
+                <h1 class="project-hero__title">PUMA Xetic Basketball</h1>
+                <p class="project-hero__lead">A computational design framework for auxetic basketball midsoles, validated with dynamic FEA across running, landing, and cutting motions.</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">3D modeling · FEA simulation</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >Puma | Xetic Basketball</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Focus</div>
+                    <div class="project-meta__value">Biomechanics · Auxetic midsoles</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>3D modeling in Rhinoceros 6</li>
-                        <li>State of art FEA simulation for 3D dynamic footwear verification</li>
-                        <li>Biomechanical research and application</li>
-                        <li>Rendering and product presentation</li>                        
-                    </ul>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Partner</div>
+                    <div class="project-meta__value">PUMA · MIT Design Lab</div>
+                </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Status</div>
+                    <div class="project-meta__value">NDA</div>
                 </div>
             </div>
-        </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <h1 class="abstract">Abstract</h1>
-        <p class="p_abstract" id="xetic_bas">Nowadays performance sport products are becoming more complex each day and aspects such as customization, ergonomics, functionality and aesthetics are gaining more attention. In order to meet these requirements, design processes need to become more efficient to put on the market more competitive products in a short amount of time. <br>
-            Digital tools such as computational design and finite element analysis has the potential to allow upcoming footwear developments to be virtually designed and evaluated, removing the quantity of human tests and physical prototyping. <br>
-            This study aims to develop and validate a design framework for footwear development, with the use of digital tools and CAE techniques. This framework starts with the use of computational design combining parametric modeling, 3D modeling and multi-data point to create a large number of permutations that could generate multiple design solutions. Once that these solutions are narrowed down an optimization task with FEA is implemented. <br>
-            Xetic Basketball is the case study to be analyzed under this design framework, project that brings auxetic pattern performance into the basketball game and with the use of a novel dynamic finite element analysis a virtual design validation of a basketball shoe can be perform in the three most dynamic basketball movements running, landing and cutting.</p>
-        <div class="caption__wrapper">
-            <img src="img//Project1/1port-1.jpg" alt="" class="port__img--caption">
         </div>
-        <p class="p_abstract">
-            Visit the <a href="puma_xetic.html">Xetic running</a> project also named Calibrate runner.
-        </p>
-        <h2 class="NDA_mes">Please contact me for further information</h2>
-        <!-- <p>
-            Rock climbing shoes are the interface between climbers and rock, and the wrong type of shoe or fit can hold you back. 
-            <br> 
-            Typically climbing shoes have a close fit, little padding or a stiffening material between the foot-bed and sole named midsole. 
-            <br> 
-            The thickness and shape of midsole varies greatly to achieve the intended balance between support and sensitivity.
-        </p>-->
+    </section>
+
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Abstract</h3>
+                <p>Performance footwear demands faster, more efficient design processes. This thesis develops a computational framework that combines parametric modeling, data-driven iteration, and multi-case FEA to validate auxetic basketball midsoles.</p>
+                <p>Xetic Basketball serves as the case study for validating the framework across three dynamic movements: running, landing, and cutting.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project1/1port-1.jpg" alt="Xetic basketball render" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Related project</h3>
+            <p>Visit the <a href="puma_xetic.html">Xetic Running</a> project (Calibrate Runner) for the complementary running case study.</p>
+            <p><strong>Please contact me for further information.</strong></p>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer__email">
@@ -121,11 +131,6 @@
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </li>
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="">
-                        d
-                    </a>
-                </li>-->
             </ul>
         </div>
         <div class="footer__logo">
@@ -140,6 +145,4 @@
     <script type="module" src="js/index.js"></script>
 
 </body>
-
-
 </html>

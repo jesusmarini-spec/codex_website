@@ -28,16 +28,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
-
         </div>
         <button class="nav__toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -55,77 +53,92 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-           <div class="img__background--port"style="background-image:url(img/Project13/portfolio-back.jpg)"></div>
-          <!--  <div class="video__container"> <video id="videoBG" class="video__wrapper" src="img/Project8/Polar Roller Ice.mp4" autoplay loop muted></video></div>-->
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>Puma Xetic | Calibrate runner</strong></h3>
+
+    <section class="project-hero">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/Project13/13port-1.jpg" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">MIT Design Lab · PUMA</p>
+                <h1 class="project-hero__title">Xetic Running · Calibrate Runner</h1>
+                <p class="project-hero__lead">Advanced 3D FEA and computational design workflows to refine auxetic midsoles for PUMA’s Xetic running platform.</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">Computational designer · FEA</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >MIT Design Lab</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Focus</div>
+                    <div class="project-meta__value">Auxetic midsole verification</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>Novel 3D footwear FEA</li>
-                        <li>Final design verification</li>
-                        <li>Design proposals & DFM</li>
-                        <li>High-end engineering</li>
-                        <li>Material research</li>
-                    </ul>
-                    <p></p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Tools</div>
+                    <div class="project-meta__value">Abaqus · Rhino · Prototyping</div>
+                </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Partner</div>
+                    <div class="project-meta__value">PUMA Innovation</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Adaptive Dynamics experience</h3>
+                <p>During my time at MIT Design Lab, I joined the Calibrate Runner project to refine the FEA simulation pipeline. My contribution focused on transforming the workflow from 2D assumptions to full 3D analysis.</p>
+                <p>This shift enabled more accurate stress and deformation predictions, speeding the design process for auxetic midsole configurations.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project13/13port-1.jpg" alt="Xetic render" loading="lazy">
+            </figure>
         </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <h1 class="abstract">The project</h1>
-        <h3 class="parag_title" id="xetic_run">Adaptive dynamics experience</h3>
-        <p class="p_abstract">
-            During my time at <strong>MIT Design Lab</strong>, I contributed to different projects mainly as a computational designer. In the project “Calibrate runner”, I joined the team in the last part of the process in which my principal contribution was the <strong>refinement of the FEA simulation</strong> by bringing full-in my <strong>engineering skills and previous experiences working in energy absorption</strong> and crash impacts at my time in <a href="Ford_CAE_Engineer.html">Ford Motor Company</a>. <br><br>
-        </p>
-        <!--Division en 4-->
-        <div class="four__grid-items">
-            <img src="img//Project13/13port-1.jpg" alt="" class="port__img-grid">
-            <img src="img//Project13/13port-2.jpg" alt="" class="port__img-grid">
-            <img src="img//Project13/13port-3.jpg" alt="" class="port__img-grid">
-            <img src="img//Project13/13port-4.jpg" alt="" class="port__img-grid">
-        </div>
-        <p class="p_abstract">
-            In this project, I realized that could be a different way of calculating the stresses and deformations of the midsole with finite element analysis. So, I develop a new step within the existent workflow of the virtual design-simulation-prototyping. The principal <strong>game-changer</strong> was the modification from <strong>2D FEA into a 3D simulation environment capable of analyzing the full phenomena</strong> of the midsole, getting more accurate results that would help its design and manufacturing. <br><br>
-        </p>
-        <!--Division en 4-->
-        <div class="four__grid-items">
-            <img src="img//Project13/13port-5.gif" alt="" class="port__img-grid">
-            <img src="img//Project13/13port-6.gif" alt="" class="port__img-grid">
-            <img src="img//Project13/13port-7.gif" alt="" class="port__img-grid">
-            <img src="img//Project13/13port-8.gif" alt="" class="port__img-grid">
-        </div>
-        <p class="p_abstract">
-            Throughout the project of running and basketball, I use a lot of qualitative and quantitative data, for example, plantar distribution and ground reaction forces. This process took a lot of back and forward iterations, just to create this new set-up environment capable of giving accurate results. I probably went through hundreds or even thousands of simulations to finally arrive at the desirable set-up. <br><br>  
-            Some of the biggest challenges in setting this simulation environment up were: the definition of hyperelastic and hyperfoam materials into the FEA software, add all the biomechanical constraints and consideration necessary to make sense of the simulation, and the creation of a 3D mesh capable of detecting the pattern behavior with good accuracy. <br><br>
-        </p>
-        <p class="p_abstract">
-            This change also helped to <strong>speed up the design process</strong>, because now was possible to test in a fast and dynamic way different pattern configurations. <br><br>
-        </p>
-        <img src="img//Project13/13port-9.gif" alt="" class="port__img-top">
-        <h3 class="parag_title" id="xetic_run">Prototyping</h3>
-        <p class="p_abstract">
-            <img src="img/Project13/13port-10.jpg" alt="" class="port__img">
-            Finally, I contribuited with 3D printing protoypes and another sport versions of Xetic technology, you can find more details in the following link. <br><br>  
-            <img src="img/Project13/13port-11.jpg" alt="" class="port__img">
-        </p>
-        <h3 class="parag_title" id="xetic_run">MIT Design Lab article</h3>
-        <p>
-            <a href="https://design.mit.edu/projects/puma-auxetic-recurve-midsole"> https://design.mit.edu/projects/puma-auxetic-recurve-midsole</a><br> <br>
-        </p>
-        
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/444948031" width="640" height="360" frameborder="0" allowfullscreen class="video__wrapper_y"></iframe> <br><br>
-        <h3 class="parag_title" id="xetic_run">Final product</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/K8pahZAmAV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__wrapper_y"></iframe>
-    </div>
+
+        <section class="project-section">
+            <h3>Iteration library</h3>
+            <div class="project-gallery">
+                <img src="img/Project13/13port-2.jpg" alt="Pattern study 1" loading="lazy">
+                <img src="img/Project13/13port-3.jpg" alt="Pattern study 2" loading="lazy">
+                <img src="img/Project13/13port-4.jpg" alt="Pattern study 3" loading="lazy">
+                <img src="img/Project13/13port-5.gif" alt="Simulation iteration 1" loading="lazy">
+                <img src="img/Project13/13port-6.gif" alt="Simulation iteration 2" loading="lazy">
+                <img src="img/Project13/13port-7.gif" alt="Simulation iteration 3" loading="lazy">
+                <img src="img/Project13/13port-8.gif" alt="Simulation iteration 4" loading="lazy">
+            </div>
+            <p>Qualitative and quantitative data (plantar pressure, ground reaction forces) informed hundreds of simulation cycles to validate biomechanical constraints.</p>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Workflow upgrade</h3>
+                <p>The core breakthrough was building a 3D mesh and material definition pipeline for hyperelastic and hyperfoam materials. This accelerated iteration across multiple pattern configurations.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project13/13port-9.gif" alt="3D simulation workflow" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Prototyping</h3>
+            <div class="project-gallery">
+                <img src="img/Project13/13port-10.jpg" alt="3D printed prototype" loading="lazy">
+                <img src="img/Project13/13port-11.jpg" alt="Prototype detail" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>References</h3>
+            <p><a href="https://design.mit.edu/projects/puma-auxetic-recurve-midsole">MIT Design Lab article</a></p>
+            <iframe class="project-gallery__full" title="Xetic overview" src="https://player.vimeo.com/video/444948031" allowfullscreen></iframe>
+            <iframe class="project-gallery__full" src="https://www.youtube.com/embed/K8pahZAmAV0" title="Final product" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer__email">
@@ -150,11 +163,6 @@
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </li>
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="">
-                        d
-                    </a>
-                </li>-->
             </ul>
         </div>
         <div class="footer__logo">

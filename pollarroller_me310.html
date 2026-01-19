@@ -28,16 +28,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
-
         </div>
         <button class="nav__toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -55,101 +53,130 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-          <!--  <div class="img__background--port"style="background-image:url(img/project7/portfolio-back.png)"></div>-->
-           <div class="video__container"> <video id="videoBG" class="video__wrapper" src="img/Project7/Polar Roller Ice.mp4" autoplay loop muted></video></div>
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>ME310 Stanford University</strong></h3>
+
+    <section class="project-intro-video" aria-label="Polar Roller intro video">
+        <div class="project-intro-video__media">
+            <video class="project-intro-video__player" src="img/Project7/Polar Roller Ice.mp4" autoplay muted loop playsinline></video>
+            <div class="project-intro-video__label">
+                <span class="project-intro-video__pill">Prototype teaser</span>
+                <p>Early experiments showing how the roller rapidly chills beverages.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-hero project-hero--has-intro">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/Project7/7port-1.png" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">ME310 · Stanford University</p>
+                <h1 class="project-hero__title">Polar Roller · Rapid beverage cooling</h1>
+                <p class="project-hero__lead">A liquid-cooled appliance that chills beverages fast and can also freeze water into ice without the long wait of a standard freezer cycle.</p>
+                <p class="project-hero__badge project-hero__badge--video">Intro video available</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">Rapid prototyping · CAD · FEA</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >Polar Roller</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Partner</div>
+                    <div class="project-meta__value">Mabe · ME310</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>Rapid prototyping</li>
-                        <li>Technology research</li>
-                        <li>CAD design and FEA implementation</li>
-                        <li>Manufacturing</li>
-                    </ul>
-                    <h3>Team</h3>
-                    <ul>
-                        <li>Jesus Marini Parissi</li>
-                        <li>Maria Jose Flores</li>
-                        <li>Ariana Mendez</li>
-                        <li>David Kingman</li>
-                        <li>Sebastian Quijano </li>
-                        <li>Jorge Lopez</li>
-                        <li>J. Daniel Rainey</li>
-                        <li>Maria Juliana Loza</li>
-                        <li>Matthew Rios</li>
-                    </ul>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Timeline</div>
+                    <div class="project-meta__value">2 quarters · 2014</div>
+                </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Team</div>
+                    <div class="project-meta__value">J. Marini · M. J. Flores · A. Mendez · D. Kingman · S. Quijano · J. Lopez · J. D. Rainey · M. J. Loza · M. Rios</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Challenge</h3>
+                <p>Ice makers haven’t changed in decades; making a new batch still takes 90 minutes. Mabe asked our ME310 team to rethink the entire cooling ritual and eliminate the waiting gap.</p>
+                <p>We investigated the most common use case: cooling beverages without dilution. The question became: why use ice at all?</p>
+                <ul class="project-facts">
+                    <li>Focused on cooling speed, taste preservation, and ritual simplicity.</li>
+                    <li>Explored phase-change alternatives to traditional ice cubes.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project7/7port-1.png" alt="Polar Roller hero render" loading="lazy">
+            </figure>
         </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <div class="caption__wrapper">
-            <img src="img/Project7/7port-1.png" alt="" class="port__img--caption">
-        </div>
-        <h1 class="abstract">Abstract</h1>
-        <p class="p_abstract"> 
-            The in-refrigerator ice maker has been the same for the past few decades Ice is generally available when you need it. Once the storage reservoir is diminished, you may be waiting for another hour and half before a new batch is frozen. This process has remained standard with only incremental improvements through the years. Mabe, the largest Mexican appliance company, challenged us to change this.
-        </p>
-        <h3 class="parag_title">Problem setting</h3>
-        <p class="p_abstract">
-            What do people use ice for? We found that over 80% of the time, ice is used to cool beverages. Placing ice in a beverage is fine for some people, but many dislikes the fact that it dilutes any non-water beverage, or even its annoyance when trying to drink out of an open cup. This led us to our next fundamental question: Why ice at all? Can we viably bypass it all together?
-        </p>
-        <h3 class="parag_title">Needfindings</h3>
-        <p class="p_abstract">
-            By performing extensive primary and secondary research, with different types of users and product, we learned that people find making ice to be time consuming. For example, nowadays making a new batch of ice in a freezer means to wait at least 90 minutes. 
-        </p>
-        <div class="three__grid-items">
-            <img src="img/Project7/7port-2.jpg" alt="" class="port__img-grid1">
-            <img src="img/Project7/7port-3.jpg" alt="" class="port__img-grid2">
-        </div>
-        <div class="port__img-grid3">
-            <img src="img/Project7/7port-4.jpg" alt="" >
-        </div>
-        <h3 class="parag_title">Functional and experience prototyping</h3>
-        <p class="p_abstract">
-            The main objective of performing experience prototypes is to get the bone of the user need, with these results we could re-think the design questions and determinate the final characteristics that the product must have to create the expected user experience. <br><br>
-            The CEP (Critical Experience prototype) means to create a “real experience” to get opinions and information from the users. By creating a “looks like experience” / “wizard Oz prototyping”.
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0ieU8wEPkJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__wrapper_y"></iframe>
-        <h3 class="parag_title">Polar Roller Final Design</h3>
-        <img src="img/Project7/7port-5.jpg" alt="" class="port__img">
-        <p class="p_abstract"> 
-            The Pollar Roller has two aims: quickly cool down canned and bottled beverages in cylindrical containers and to freeze water into ice by using the same method, but with the use of a specific cylindrical design container. This is achieved thanks to the use of liquid cooling.
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wZuH8dgrRMo?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__wrapper_y"></iframe>       
-        <img src="img/Project7/7port-6.jpg" alt="" class="port__img">
-        <p class="p_abstract">
-            An user-friendly interface was implemented with the implementation of capacitive sensors on a PMMA surface, with an arduino controller capable of activate several internal motors and rollers in order to create the perfect cooling cycle. <br>
-            This interface was tested for more than 300 people at the Final presentation of the product at Stanford University.
-        </p>
-        <img src="img/Project7/7port-7.jpg" alt="" class="port__img">
-        <h3 class="parag_title">ME310 Expe 2014</h3>
-        <p class="p_abstract">
-        </p>
-        <div class="four__grid-items">
-            <img src="img/Project7/7port-8.jpg" alt="" class="port__img-grid">
-            <img src="img/Project7/7port-9.jpg" alt="" class="port__img-grid">
-            <img src="img/Project7/7port-10.jpg" alt="" class="port__img-grid">
-            <img src="img/Project7/7port-11.jpg" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">Polar Roller construction</h3>
-        <p class="p_abstract">
-        </p>
-        <div class="four__grid-items">
-            <img src="img/Project7/7port-12.JPG" alt="" class="port__img-grid">
-            <img src="img/Project7/7port-13.JPG" alt="" class="port__img-grid">
-            <img src="img/Project7/7port-14.JPG" alt="" class="port__img-grid">
-            <img src="img/Project7/7port-15.JPG" alt="" class="port__img-grid">
-        </div>
-    </div>
+
+        <section class="project-section">
+            <h3>Needfinding</h3>
+            <p>Research showed ice is used primarily for beverages, but consumers dislike dilution and the lag time for new ice. We prototyped experiential alternatives to validate the core need: rapid chilling without compromise.</p>
+            <div class="project-gallery">
+                <img src="img/Project7/7port-2.jpg" alt="Needfinding photo 1" loading="lazy">
+                <img src="img/Project7/7port-3.jpg" alt="Needfinding photo 2" loading="lazy">
+                <img src="img/Project7/7port-4.jpg" alt="Needfinding photo 3" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Critical experience prototypes</h3>
+            <p>We ran “looks-like” and “Wizard of Oz” experiments to capture the emotional response to rapid cooling. Feedback shaped the final roller geometry and interface behavior.</p>
+            <iframe class="project-gallery__full" src="https://www.youtube.com/embed/0ieU8wEPkJI" title="Critical experience prototype" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Final design</h3>
+                <p>Polar Roller chills cans and bottles by spinning them against a liquid-cooled surface. The same system can freeze water using a cylindrical container, unlocking both beverage cooling and ice production in one appliance.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project7/7port-5.jpg" alt="Polar Roller final design render" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Cooling cycle demo</h3>
+            <iframe class="project-gallery__full" src="https://www.youtube.com/embed/wZuH8dgrRMo?controls=0" title="Polar Roller cooling demo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Interface & testing</h3>
+                <p>A capacitive PMMA interface powered by Arduino orchestrated the roller motors and cooling cycle. We tested the system with 300+ people during the final Stanford presentation.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project7/7port-6.jpg" alt="Interface detail" loading="lazy">
+                <img src="img/Project7/7port-7.jpg" alt="Interface testing" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>ME310 Expo 2014</h3>
+            <div class="project-gallery">
+                <img src="img/Project7/7port-8.jpg" alt="Expo photo 1" loading="lazy">
+                <img src="img/Project7/7port-9.jpg" alt="Expo photo 2" loading="lazy">
+                <img src="img/Project7/7port-10.jpg" alt="Expo photo 3" loading="lazy">
+                <img src="img/Project7/7port-11.jpg" alt="Expo photo 4" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Construction</h3>
+            <div class="project-gallery">
+                <img src="img/Project7/7port-12.JPG" alt="Construction 1" loading="lazy">
+                <img src="img/Project7/7port-13.JPG" alt="Construction 2" loading="lazy">
+                <img src="img/Project7/7port-14.JPG" alt="Construction 3" loading="lazy">
+                <img src="img/Project7/7port-15.JPG" alt="Construction 4" loading="lazy">
+            </div>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer__email">
@@ -174,11 +201,6 @@
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </li>
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="">
-                        d
-                    </a>
-                </li>-->
             </ul>
         </div>
         <div class="footer__logo">

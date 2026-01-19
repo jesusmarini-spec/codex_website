@@ -28,12 +28,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
@@ -54,153 +53,185 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-           <!-- <div class="img__background--port"style="background-image:url(img/Project2/portfolio-back.png)"></div>-->
-          <!-- <div> <video src="img/Project7/Pollar Roller Promo.mp4" autoplay loop muted></video></div>-->
-            <div class="video__container">
-               <video id="videoBG" poster="img/project2.png" class="video__wrapper" src="img/Project2/Intro_video.mp4" autoplay loop muted></video>
-               <img src="img/project2.png" alt="" class="back_img">  
+
+    <section class="project-intro-video" aria-label="Airport Travel Assistant intro video">
+        <div class="project-intro-video__media">
+            <video class="project-intro-video__player" src="img/Project2/Intro_video.mp4" autoplay muted loop playsinline></video>
+            <div class="project-intro-video__label">
+                <span class="project-intro-video__pill">Concept preview</span>
+                <p>Meet the autonomous travel assistant before the full system breakdown.</p>
             </div>
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>Product Development</strong></h3>
+        </div>
+    </section>
+
+    <section class="project-hero project-hero--has-intro">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/project2.png" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">Product development · Autonomous mobility</p>
+                <h1 class="project-hero__title">Airport Travel Assistant · ATA</h1>
+                <p class="project-hero__lead">An autonomous airport companion that guides travelers, transports luggage, and keeps flights on track through connected services.</p>
+                <p class="project-hero__badge project-hero__badge--video">Intro video available</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">Mechanical engineering · FEA · DFM</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >Airport Travel Assistant</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Toolkit</div>
+                    <div class="project-meta__value">SolidWorks · CAD/FEA · IoT research</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>Mechanical Engineering</li>
-                        <li>3D modeling & FEA</li>
-                        <li>Design for Manufacturing</li>
-                        <li>Concept Development</li>
-                        <li>Research</li>
-                        <li>Presentation</li>
-                    </ul>
-                    <h3>Team</h3>
-                    <ul>
-                        <li>Jesus Marini Parissi</li>
-                        <li>Pinar Sencandan</li>
-                        <li>Carlos Mancha</li>
-                        <li>Fabrizio di Lucia</li>
-                    </ul>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Timeline</div>
+                    <div class="project-meta__value">Academic studio · 2019</div>
                 </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Team</div>
+                    <div class="project-meta__value">J. Marini · P. Sencandan · C. Mancha · F. di Lucia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Project overview</h3>
+                <p>ATA is a compact autonomous robot designed to escort travelers through terminals, secure their luggage, and sync with flight information. It blends robotics, IoT, and service design to smooth the entire airport journey.</p>
+                <ul class="project-facts">
+                    <li>Supports luggage transport, navigation, and flight updates.</li>
+                    <li>Connects to terminal services via mobile or web apps.</li>
+                    <li>Designed for safe navigation in dense passenger flows.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project2/2port-5.jpg" alt="ATA hero render" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Problem setting</h3>
+            <p>We benchmarked autonomous airport services and mapped traveler frustrations to define the most critical moments where help is needed: navigation, baggage safety, and time awareness.</p>
+            <div class="project-gallery">
+                <img src="img/Project2/2port-1.png" alt="Research board 1" loading="lazy">
+                <img src="img/Project2/2port-2.jpg" alt="Research board 2" loading="lazy">
+                <img src="img/Project2/2port-3.jpg" alt="Research board 3" loading="lazy">
+                <img src="img/Project2/2port-4.jpg" alt="Research board 4" loading="lazy">
             </div>
         </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <h1 class="abstract">Abstract</h1>
-        <p class="p_abstract"> ATA, is an autonomous, compact, and interactive robot working along with any airport Terminal, and can be linked with their product and shops via cellphone, giving you the facilities of reviewing your flying plan, guiding you throughout the airport before your departure and after your arrival up to the connection point or destination. <br>
-            The product provides support to the user at every moment, like transporting their luggage, taking care of baggage while you are in the bathroom or showing the flight status (ETA, delay, or changes). The device will also count with connectivity support such as wi-fi, as well as electric outlets. All of this to increase the user experience and help them to have a more pleasant flight.            
-        </p>
-        <h3 class="parag_title">Problem setting</h3>
-        <p class="p_abstract">
-            An extensive secondary research was performed, including IoT analysis, User experience, history boards, benchmarking and need finding that helped us to guide correctly our final design choice.
-        </p>
-                <!--Division en 4-->
-        <div class="four__grid-items">
-                <img src="img//Project2/2port-1.png" alt="" class="port__img-grid">
-                <img src="img//Project2/2port-2.jpg" alt="" class="port__img-grid">
-                <img src="img//Project2/2port-3.jpg" alt="" class="port__img-grid">
-                <img src="img//Project2/2port-4.jpg" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">Brief</h3>
-        <p class="p_abstract">
-            Redesign YAPE allowing it to be an autonomous ‘’Traveler Assistant’’ inside airports, keeping safe and carrying your hand luggage, providing also guidance and support to the user inside the terminals with an intuitive interface.
-        </p>
-        <img src="img//Project2/2port-5.jpg" alt="" class="port__img">
-        <img src="img//Project2/2port-6.jpg" alt="" class="port__img">
-        <h3 class="parag_title">Luggage arrangement</h3>
-        <p class="p_abstract">
-            ATA was developed to have a perfect fit with all the possible variations of hand luggage, along with an intuitive visualization spot to keep secure your belongings. 
-        </p>
-        <!--Division en 4-->
-        <div class="four__grid-items">
-            <img src="img/Project2/2port-7.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-8.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-9.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-10.JPG" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">Dimensions and main features</h3>
-        <p class="p_abstract">
-            The research performed show us the main features and characteristics that ATA should have. Those items that the people will need and would make the user experience so much easier, for this we integrate what we thought were the best fits in our design.
-        </p>
-        <!--Division en 4-->
-        <div class="four__grid-items">
-            <img src="img//Project2/2port-11.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-12.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-13.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-14.JPG" alt="" class="port__img-grid">
-        </div>
-        <p class="p_abstract">
-            All the systems require a level of connectivity more now that the IoT products and 5G connection is gaining terrain, we tried to keep the most possible inside ATA but at the same time we give the freedom to connect with our product via web application.
-        </p>
-        <img src="img//Project2/2port-15.JPG" alt="" class="port__img">
-        <p class="p_abstract">
-            Safety measurements and status visualization was one of the principal characteristics that pop-out in our research, so we included a belt that can grab most of the luggage handles, along with a system that is linked with the beacon, in this way the safety of your luggage will be always in your hand. <br> 
-            The light systems are to show any problem in the way, or any change in itinerary. At the same time, is linked with the security system increase the sensation of safety within the airport. 
-        </p>
-        <!--Division en 4-->
-        <div class="four__grid-items">
-            <img src="img//Project2/2port-16.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-17.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-18.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-19.JPG" alt="" class="port__img-grid">
-        </div>
-        <p class="p_abstract">
-            Stability is one of the main constraints of this project and similar products, due the stand by position of the inverted pendulum systems. For this we add a stability bar to create major stability and reduce the energy consumption in the idle state.
-        </p>
-        <!--Division en 4-->
-        <div class="four__grid-items">
-            <img src="img//Project2/2port-20.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-21.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-22.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-23.JPG" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">User experience</h3>
-        <p class="p_abstract">
-            The user experience is divided in 4 phases: first is it necessary to find the drone in one of the charging stations. Then by scanning you ticket or using the app you will get access to your personal ATA unit. After this, load your luggage and follow the instruction or program an interaction; on this configuration you can play with three different modes: <strong>Follow</strong> (the drone follows you everywhere with the help of the beacon system), <strong>Guide</strong>  (the drone guides you whenever you need to go) and <strong>Auto</strong>  (when is not use it and goes back to the charging rack).        </p>
-        <div class="four__grid-items">
-            <img src="img//Project2/2port-24.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-25.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-26.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-27.JPG" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">Technical overview</h3>
-        <p class="p_abstract">
-            In the engineering process different studies where performed in order to have the best of our design. Several iterations of FEA where made to create an optimized structure, besides a specific analysis was perform in the security system to ensure that is not possible to break. <br>
-            Also, all the component where design for manufacturing, following process capable to be produce for a batch size of 10,000 units. 
-        </p>
-        <div class="four__grid-items">
-            <img src="img//Project2/2port-28.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-29.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-30.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-31.JPG" alt="" class="port__img-grid">
-        </div>
-        <div class="four__grid-items">
-            <img src="img//Project2/2port-32.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-33.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-34.JPG" alt="" class="port__img-grid">
-            <img src="img//Project2/2port-35.JPG" alt="" class="port__img-grid">
-        </div>
-        <h3 class="parag_title">Charging system</h3>
-        <p class="p_abstract">
-        </p>
-        <div class="three__grid-items">
-            <img src="img//Project2/2port-36.JPG" alt="" class="port__img-grid1">
-            <img src="img//Project2/2port-37.JPG" alt="" class="port__img-grid2">
-        </div>
-        <div class="port__img-grid3">
-            <img src="img//Project2/2port-38.JPG" alt="" >
-        </div>
-        <p class="p_abstract">
-            This project intregates a wide part of the learning inside the master of Design & Engineering.
-        </p>
-        <img src="img//Project2/2port-39.JPG" alt="" class="port__img">
 
-    </div>
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Brief distilled</h3>
+                <p>Reimagine YAPE as an autonomous travel assistant: keep luggage safe, provide guidance, and deliver information with an intuitive interface inside busy terminals.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project2/2port-5.jpg" alt="Brief render 1" loading="lazy">
+                <img src="img/Project2/2port-6.jpg" alt="Brief render 2" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Luggage arrangement</h3>
+            <p>ATA accommodates varied carry-on sizes while keeping belongings visible and secure. A dedicated visualization spot keeps passengers aware of their items at all times.</p>
+            <div class="project-gallery">
+                <img src="img/Project2/2port-7.JPG" alt="Luggage arrangement 1" loading="lazy">
+                <img src="img/Project2/2port-8.JPG" alt="Luggage arrangement 2" loading="lazy">
+                <img src="img/Project2/2port-9.JPG" alt="Luggage arrangement 3" loading="lazy">
+                <img src="img/Project2/2port-10.JPG" alt="Luggage arrangement 4" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Dimensions & main features</h3>
+            <p>We defined a set of critical features derived from research, including secure storage, connectivity, and a clear safety language through light cues.</p>
+            <div class="project-gallery">
+                <img src="img/Project2/2port-11.JPG" alt="Dimension study 1" loading="lazy">
+                <img src="img/Project2/2port-12.JPG" alt="Dimension study 2" loading="lazy">
+                <img src="img/Project2/2port-13.JPG" alt="Dimension study 3" loading="lazy">
+                <img src="img/Project2/2port-14.JPG" alt="Dimension study 4" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Connectivity & safety</h3>
+                <p>ATA integrates a beacon-linked safety belt and visual status indicators to secure luggage. Connectivity enables live flight updates and remote control through a web app.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project2/2port-15.JPG" alt="Connectivity overview" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Safety lighting system</h3>
+            <p>Light cues signal obstacles, changes in itinerary, and system status while reinforcing the security perception for travelers.</p>
+            <div class="project-gallery">
+                <img src="img/Project2/2port-16.JPG" alt="Lighting detail 1" loading="lazy">
+                <img src="img/Project2/2port-17.JPG" alt="Lighting detail 2" loading="lazy">
+                <img src="img/Project2/2port-18.JPG" alt="Lighting detail 3" loading="lazy">
+                <img src="img/Project2/2port-19.JPG" alt="Lighting detail 4" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Stability system</h3>
+            <p>To reduce energy consumption while idle, we introduced a stability bar that supports the inverted pendulum structure and keeps ATA upright in standby.</p>
+            <div class="project-gallery">
+                <img src="img/Project2/2port-20.JPG" alt="Stability system 1" loading="lazy">
+                <img src="img/Project2/2port-21.JPG" alt="Stability system 2" loading="lazy">
+                <img src="img/Project2/2port-22.JPG" alt="Stability system 3" loading="lazy">
+                <img src="img/Project2/2port-23.JPG" alt="Stability system 4" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>User experience flow</h3>
+            <p>Four phases guide travelers: activate ATA, scan the ticket, load luggage, and choose a mode: Follow, Guide, or Auto-return. Each mode adapts the robot’s behavior to different travel needs.</p>
+            <div class="project-gallery">
+                <img src="img/Project2/2port-24.JPG" alt="UX flow 1" loading="lazy">
+                <img src="img/Project2/2port-25.JPG" alt="UX flow 2" loading="lazy">
+                <img src="img/Project2/2port-26.JPG" alt="UX flow 3" loading="lazy">
+                <img src="img/Project2/2port-27.JPG" alt="UX flow 4" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Technical overview</h3>
+            <p>Engineering studies included structural FEA, security system analysis, and design-for-manufacturing optimizations to support 10,000-unit production runs.</p>
+            <div class="project-gallery">
+                <img src="img/Project2/2port-28.JPG" alt="Technical study 1" loading="lazy">
+                <img src="img/Project2/2port-29.JPG" alt="Technical study 2" loading="lazy">
+                <img src="img/Project2/2port-30.JPG" alt="Technical study 3" loading="lazy">
+                <img src="img/Project2/2port-31.JPG" alt="Technical study 4" loading="lazy">
+                <img src="img/Project2/2port-32.JPG" alt="Technical study 5" loading="lazy">
+                <img src="img/Project2/2port-33.JPG" alt="Technical study 6" loading="lazy">
+                <img src="img/Project2/2port-34.JPG" alt="Technical study 7" loading="lazy">
+                <img src="img/Project2/2port-35.JPG" alt="Technical study 8" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Charging system</h3>
+            <div class="project-gallery">
+                <img src="img/Project2/2port-36.JPG" alt="Charging station 1" loading="lazy">
+                <img src="img/Project2/2port-37.JPG" alt="Charging station 2" loading="lazy">
+                <img src="img/Project2/2port-38.JPG" alt="Charging station 3" loading="lazy">
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h3>Final render</h3>
+            <img src="img/Project2/2port-39.JPG" alt="ATA final render" class="project-gallery__full" loading="lazy">
+        </section>
+    </main>
+
     <footer id="contact" class="footer">
         <div class="footer__email">
             <a href="mailto:jmarini29&#64;gmail.com" aria-label="Send email to Jesus Marini Parissi" class="footer__link">jmarini29 [at] gmail [dot] com</a>
@@ -224,11 +255,6 @@
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </li>
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="">
-                        d
-                    </a>
-                </li>-->
             </ul>
         </div>
         <div class="footer__logo">

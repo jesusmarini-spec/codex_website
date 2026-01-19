@@ -28,12 +28,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
@@ -55,43 +54,59 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-           <div class="img__background--port"style="background-image:url(img/Project8/portfolio-back.png)"></div>
-          <!--  <div class="video__container"> <video id="videoBG" class="video__wrapper" src="img/Project8/Polar Roller Ice.mp4" autoplay loop muted></video></div>-->
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>Hololens development</strong></h3>
+
+    <section class="project-hero">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/Project8/8port-1.png" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">Hololens development</p>
+                <h1 class="project-hero__title">Nespresso Master Origin · Mixed reality</h1>
+                <p class="project-hero__lead">A HoloLens experience for the Nespresso Master Origin launch, guiding visitors through each coffee’s origin story and processing technique.</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">Unity development · Deployment</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >Nespresso Master Origin</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Focus</div>
+                    <div class="project-meta__value">Mixed reality · Event activation</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>Unity Development</li>
-                        <li>Deployment & testing</li>
-                        <li>Multiversion adaptability</li>
-                        <li>Animation & Control</li>
-                    </ul>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Tools</div>
+                    <div class="project-meta__value">Unity · HoloLens</div>
+                </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Location</div>
+                    <div class="project-meta__value">Dazi Arco della Pace, Milan</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Project overview</h3>
+                <p>Nespresso launched five new Master Origin blends with a public event in Milan. We created a HoloLens-based experience so visitors could explore each coffee’s origin, grain characteristics, and processing steps.</p>
+                <p><a href="https://dot-shell.com/project/nespresso-master-origin/">Visit the Nespresso Master Origin project</a> for more details.</p>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project8/8port-1.png" alt="Nespresso Master Origin visuals" loading="lazy">
+            </figure>
         </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <h1 class="abstract"> Augmented Nespresso Master Origin</h1>
-        <p class="p_abstract">
-            Nespresso launches 5 new Master Origin with an event open to the public at Dazi Arco della Pace in Milan. Creating a development in mixed reality to create an experience with HoloLens. <br>
-            Users were able along the event to explore the HoloLens experience for each Master Origin with different characteristics of the grain and the processing that makes unique to become a Master Origin.
-        </p>
-        <p>For more information <a rel="stylesheet" href="https://dot-shell.com/project/nespresso-master-origin/"> visit Nespresso MO project. </a></p>
-        <h1 class="abstract"> Discover part of the experience Nespresso</h1>
-        <p class="p_abstract">
-            The following video is the static version of the experience deployed. Along with different versions according with each Master Origin Presentation.
-        </p>
-        <div class="video__container"> <video id="videoBG" class="video__wrapper" src="img/Project8/Nesspresso_Video_Unity_2.mp4" autoplay loop muted></video></div>
-        <img src="img//Project8/8port-1.png" alt="" class="port__img">
-    </div>
+
+        <section class="project-section">
+            <h3>Experience preview</h3>
+            <p>The following video shows the deployed MR experience with multiple versions tailored to each Master Origin presentation.</p>
+            <video class="project-gallery__full" src="img/Project8/Nesspresso_Video_Unity_2.mp4" autoplay muted loop playsinline></video>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer__email">
@@ -116,11 +131,6 @@
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </li>
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="">
-                        d
-                    </a>
-                </li>-->
             </ul>
         </div>
         <div class="footer__logo">

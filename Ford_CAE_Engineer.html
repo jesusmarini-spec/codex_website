@@ -28,16 +28,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link to the css file-->
-    <link rel="stylesheet" href="css/port-6.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="project-page">
     <header>
         <div class="logo">
             <a href="index.html#home"><img src="img/jmp_logo.png" alt=""></a>
-
         </div>
         <button class="nav__toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -55,80 +53,107 @@
             </nav>
         </div>
     </header>
-   <!-- <div class="intro__wrapper">-->
-        <section class="intro" id="home">
-           <div class="img__background--port"style="background-image:url(img/Project11/portfolio-back.jpg)"></div>
-          <!--  <div class="video__container"> <video id="videoBG" class="video__wrapper" src="img/Project8/Polar Roller Ice.mp4" autoplay loop muted></video></div>-->
-            <div class="text__wrapper">
-                <div class="section__title section__title--port">
-                    <h3 ><strong>CAE Engineer</strong></h3>
+
+    <section class="project-hero">
+        <div class="project-hero__bg" aria-hidden="true">
+            <div class="project-hero__bg-glow"></div>
+            <div class="project-hero__media project-hero__media--background" aria-hidden="true">
+                <img src="img/Project11/11port-1.jpg" alt="" loading="lazy">
+            </div>
+        </div>
+        <div class="project-hero__content">
+            <div>
+                <p class="project-hero__eyebrow">CAE engineer</p>
+                <h1 class="project-hero__title">Ford Motor Company · Product Development</h1>
+                <p class="project-hero__lead">Led structural, modal, and low-speed crash simulations for exterior systems, delivering faster correlation workflows and patent-backed innovations.</p>
+            </div>
+            <div class="project-meta">
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Role</div>
+                    <div class="project-meta__value">CAE engineer · Exterior systems</div>
                 </div>
-                <div class="section__subtitle section__subtitle--intro">
-                    <p >Ford Motor Company</p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Tools</div>
+                    <div class="project-meta__value">Abaqus · Hypermesh · ANSA · CATIA</div>
                 </div>
-                <div class="task__port">
-                    <h3>Main task</h3>
-                    <ul>
-                        <li>FEA structural analysis</li>
-                        <li>CAE workflow development</li>
-                        <li>Low Speed Damagiability crash</li>
-                        <li>Presentationd and Managment report</li>
-                        <li>Material research</li>
-                        <li>Autonomous worker</li>
-                    </ul>
-                    <h3>09/2014 - 07/2017</h3>
-                    <p></p>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Timeline</div>
+                    <div class="project-meta__value">09/2014 – 07/2017</div>
+                </div>
+                <div class="project-meta__card">
+                    <div class="project-meta__label">Focus</div>
+                    <div class="project-meta__value">FEA · Low-speed damageability</div>
                 </div>
             </div>
-        </section>
-   <!-- </div>-->
-    <div class="portfolio-item-individual"><!--queria ahcer un grid de 4x4 o 1:1 para imagen y texto-->
-        <h1 class="abstract">Experience</h1>
-        <p class="p_abstract">
-            During my time at Ford Motor Company in the Mexico City headquarters I perform different roles within the Product Development department. <br><br>
-            I started as CAE Engineer for Exterior System, were I was in charge of the structural check for the front and rear fascia of the different platforms (Explorer, Navigator & Mustang). <br>
-            On this role I perform structural, modal or thermal analysis for plastic components using software’s like: Abaqus CAE, Hypermesh, Ansa and Catia v5. <br>
-            My biggest achievement at this role was the development of a simulation workflow with a specific meshing technic for irregular plastic components (such as frontal grills), that speed up the delivery process by maintaining a good level of correlation with physical tests. <br><br>
-            Afterwards, I moved into the task of <strong>Low speed damageability crash </strong>. On this role I was in charge of build the mesh of the front and read end of the car from the CAD model to a mesh type model capable of been integrated in FEA software’s such as Abaqus and LS-Dyna. <br> 
-            I performed simulation for the ECE-42 regulation and Part-581 that are simulations to ensure the integrity of vitals components after the low speed impact. <br>
-            Once that the simulation was complete, I created different design proposals to structurally increase the performance of specific parts or systems. <br>
-            I deeply work in the energy absorber element, understanding it’s functions, material, manufacturing process. Achieving the creating of a mixed system that ensure the integrity of internal components but at the same time meets the softness for pedestrians. <br><br>           
-            Along this 3+ years, I received several <strong>trainings</strong> in software’s like <strong>Abaqus CAE, ANSA, Hyperworks, LS-dyna, Team Center, VisMockUp and CATIA v5</strong>. also developed my soft and negotiation skills by working directly with cross-functional teams from different regions and management presentations. <br>Also, I had the opportunity to be involve in the development 4 patents. <br> <br>
-            <strong>The following are ilustrative images of online examples that are similar to my work performed</strong>.
-        </p>
-        <div>
-            <img src="img//Project11/11port-1.jpg" alt="" class="port__img">
-            <p class="p_abstract">
-              Sonawane, C.R., Shelar, A.L. Strength Enhancement of Car Front Bumper for Slow Speed Impact by FEA Method as per IIHS Regulation. J. Inst. Eng. India Ser. C 99, 599–606 (2018). https://doi.org/10.1007/s40032-017-0365-y
-            </p>
         </div>
-        <h1 class="abstract">Patents</h1>
-        <h3 class="parag_title">Signal drone for automotive industry</h3>
-        <p class="p_abstract">
-            An emergency alert system for a vehicle includes a drone system including a warning sign disposed within a body defining cavity of the vehicle and a controller. The controller is configured to, in response to a user request during a stop, launch the drone system from the cavity and specify drone position relative to the vehicle based on traffic flow around the vehicle to alert other vehicles in a vicinity of the vehicle via the warning sign regarding occurrence of the stop. <br><br>
-            <a href="https://patents.google.com/patent/WO2017082903A1/en">Link</a> to google patents
-        </p>
-        <img src="img//Project11/11port-2.jpg" alt="" class="port__img">
-        <h3 class="parag_title">Vehicle with active door zone (Application granted)</h3>
-        <p class="p_abstract">
-            A vehicle includes: a frame, a rotatable door; an inhibitor comprising: an arm extending through a selective gate including: upper and lower springs respectively biasing upper and lower rollers against the arm; upper and lower stoppers configured to, upon activation, compress the upper and lower rollers against the arm, thus stopping rotation of the door; sensors, processor(s) configured to: activate and deactivate the stoppers based on sensed events.<br><br>
-            <a href="https://patents.google.com/patent/US10060170B2/en?oq=10060170">Link</a> to google patents
-        </p>
-        <img src="img//Project11/11port-3.jpg" alt="" class="port__img">
-        <h3 class="parag_title">Auto-lock energy absorber for pedestrian protection and low speed damageability targets (Application granted)</h3>
-        <p class="p_abstract">
-            A bumper assembly for a motor vehicle includes an energy absorber providing a variable stiffness for different displacements. The energy absorber includes a skin portion attached to a bumper beam, a rib pivotally attached to an end of the skin portion and a reinforced element attached to an end of the rib. The rib is movable from a first position that provides a first stiffness for a first displacement to a second position providing a second stiffness greater than the first stiffness over a second displacement.<br><br>
-            <a href="https://patents.google.com/patent/US10442377B2/en">Link</a> to google patents
-        </p>
-        <img src="img//Project11/11port-4.jpg" alt="" class="port__img">
-        <h3 class="parag_title">Air vent register for a vehicle (Application granted)</h3>
-        <p class="p_abstract">
-            A vent register for a motor vehicle includes an integral scent-dispensing chamber configured for selectively allowing a vehicle heating, ventilation, and air-conditioning (HVAC) airflow therethrough. The scent-dispensing chamber includes a rear wall having one or more rear wall apertures and carrying a damper that is selectively translatable between an open configuration and a closed configuration to control a flow of conditioned air through the chamber. A selectively closeable scent-dispensing chamber front panel allows inserting or removing an air freshening substance.<br><br>
-            <a href="https://patents.google.com/patent/US10350968B2/en">Link</a> to google patents
-        </p>
-        <img src="img//Project11/11port-5.jpg" alt="" class="port__img">
+    </section>
 
-    </div>
+    <main class="project-body">
+        <section class="project-section project-section--split">
+            <div>
+                <h3>Experience</h3>
+                <p>At Ford Motor Company Mexico, I supported the Product Development team across Explorer, Navigator, and Mustang platforms. I owned structural, modal, and thermal analysis for fascia systems, using Abaqus, Hypermesh, ANSA, and CATIA.</p>
+                <p>I also led low-speed damageability simulations (ECE-42 and Part-581), converting CAD to mesh models and proposing design improvements to protect critical components.</p>
+                <ul class="project-facts">
+                    <li>Developed a meshing workflow for irregular plastic components to improve correlation speed.</li>
+                    <li>Designed mixed energy absorber systems balancing pedestrian safety and component protection.</li>
+                    <li>Completed training in Abaqus, LS-Dyna, TeamCenter, and VisMockUp.</li>
+                </ul>
+            </div>
+            <figure class="project-section__media">
+                <img src="img/Project11/11port-1.jpg" alt="FEA bumper simulation reference" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="project-section">
+            <h3>Illustrative project example</h3>
+            <p>Example reference aligned with low-speed impact analysis work.</p>
+            <div class="project-gallery">
+                <img src="img/Project11/11port-1.jpg" alt="Low-speed impact example" loading="lazy">
+            </div>
+            <p>Sonawane, C.R., Shelar, A.L. Strength Enhancement of Car Front Bumper for Slow Speed Impact by FEA Method as per IIHS Regulation. J. Inst. Eng. India Ser. C 99, 599-606 (2018). https://doi.org/10.1007/s40032-017-0365-y</p>
+        </section>
+
+        <section class="project-section">
+            <h3>Patents</h3>
+            <div class="project-section project-section--split">
+                <div>
+                    <h4>Signal drone for automotive industry</h4>
+                    <p>An emergency alert system that deploys a drone warning sign to notify nearby traffic during stops. <a href="https://patents.google.com/patent/WO2017082903A1/en">Patent link</a>.</p>
+                </div>
+                <figure class="project-section__media">
+                    <img src="img/Project11/11port-2.jpg" alt="Signal drone patent illustration" loading="lazy">
+                </figure>
+            </div>
+            <div class="project-section project-section--split">
+                <div>
+                    <h4>Vehicle with active door zone</h4>
+                    <p>Active door inhibitors with selective gating and sensors. <a href="https://patents.google.com/patent/US10060170B2/en?oq=10060170">Patent link</a>.</p>
+                </div>
+                <figure class="project-section__media">
+                    <img src="img/Project11/11port-3.jpg" alt="Active door zone patent illustration" loading="lazy">
+                </figure>
+            </div>
+            <div class="project-section project-section--split">
+                <div>
+                    <h4>Auto-lock energy absorber</h4>
+                    <p>Variable stiffness energy absorber for pedestrian protection. <a href="https://patents.google.com/patent/US10442377B2/en">Patent link</a>.</p>
+                </div>
+                <figure class="project-section__media">
+                    <img src="img/Project11/11port-4.jpg" alt="Energy absorber patent illustration" loading="lazy">
+                </figure>
+            </div>
+            <div class="project-section project-section--split">
+                <div>
+                    <h4>Air vent register</h4>
+                    <p>Integrated scent-dispensing chamber within vehicle HVAC airflow. <a href="https://patents.google.com/patent/US10350968B2/en">Patent link</a>.</p>
+                </div>
+                <figure class="project-section__media">
+                    <img src="img/Project11/11port-5.jpg" alt="Air vent register patent illustration" loading="lazy">
+                </figure>
+            </div>
+        </section>
+    </main>
 
     <footer id="contact" class="footer">
         <div class="footer__email">
@@ -153,11 +178,6 @@
                         <i class="fab fa-youtube fa-lg"></i>
                     </a>
                 </li>
-            <!-- <li class="social-list__item">
-                    <a class="social-list__link" href="">
-                        d
-                    </a>
-                </li>-->
             </ul>
         </div>
         <div class="footer__logo">
@@ -167,7 +187,7 @@
             Copyright <i class="far fa-copyright"></i> 2020 Jesus Marini Parissi
         </div>
     </footer>
-    
+
     <script type="module" src="js/index.js"></script>
 
 </body>
