@@ -49,7 +49,7 @@ const parseValue = (rawValue) => {
 };
 
 const parseArticle = (filePath) => {
-  const source = readFileSync(filePath, 'utf8');
+  const source = readFileSync(filePath, 'utf8').replace(/\r\n?/g, '\n');
   const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
 
   if (!match) {

@@ -1,5 +1,7 @@
 const navToggle = document.querySelector('.nav__toggle');
 const navLink = document.querySelectorAll('.nav__link');
+const siteHeader = document.querySelector('header');
+const mobileHomeLink = document.querySelector('.logo--mobile a');
 
 //This is for the class---------------------------------------------------
 const portfolioItems = document.querySelectorAll('.port-img')
@@ -16,15 +18,29 @@ portfolioItems.forEach(portfolioItem =>{
 })
 
 //----------------------------------------------------------------------------
-navToggle.addEventListener('click', () => {
+navToggle?.addEventListener('click', () => {
 
     document.body.classList.toggle('nav__open');
+    navToggle.setAttribute('aria-expanded', document.body.classList.contains('nav__open') ? 'true' : 'false');
 
 });
+
+mobileHomeLink?.addEventListener('click', () => {
+    document.body.classList.remove('nav__open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+});
+
+const updateHeaderState = () => {
+    siteHeader?.classList.toggle('header--scrolled', window.scrollY > 12);
+};
+
+updateHeaderState();
+window.addEventListener('scroll', updateHeaderState, { passive: true });
 
 navLink.forEach(link =>{
     link.addEventListener('click', () =>{
         document.body.classList.remove('nav__open');
+        navToggle?.setAttribute('aria-expanded', 'false');
     })
 })
 

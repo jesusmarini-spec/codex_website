@@ -10,6 +10,8 @@ Portfolio hub for Jesus Marini Parissi highlighting computational design, indust
 - **Expanded case studies** now updated to the new layout (MIT Design Lab, Ford CAE, Xetic, Dot Shell, Nespresso, R2 Heater, Redstorm, Polar Roller, Airport Travel Assistant).
 - **Navigation revamp** with a floating pill header, improved mobile burger visibility, and aligned hero spacing across the blog.
 - **Responsive polish** with smoother typography scaling and adaptive header pill sizing across breakpoints.
+- **Mobile navigation improvements** with a readable fixed header, centered hamburger control, reliable home-logo navigation, and overflow-safe layouts.
+- **Responsive project pages** with centered content cards, reset media margins, and single-column galleries on small screens.
 - **Article template** (`/blog/article.html`) hydrates full-length posts from the shared JSON dataset, including share buttons and tag chips.
 - **Shared styling/components** via `css/style.css`, `css/blog.css`, and lightweight vanilla JS in `js/index.js` plus `src/blog.js`.
 - **Complete production build** that includes every portfolio page plus the blog data, Unity runtime, 3D assets, and custom-domain configuration.
@@ -23,7 +25,7 @@ Portfolio hub for Jesus Marini Parissi highlighting computational design, indust
 4. `npm run content:validate` checks article metadata, image paths, alt text, and generated JSON.
 5. `npm run dev` generates blog content and launches the local Vite server at http://localhost:5173.
 6. `npm run build` validates content and emits the production-ready site into `dist/`.
-7. Review `CONTENT_GUIDE.md` for manual content and image updates, then `docs/deployment.md` before deployment.
+7. Review `Modify_guide.txt` for the quick editing workflow, `CONTENT_GUIDE.md` for detailed content guidance, and `docs/deployment.md` before deployment.
 
 ## Deployment
 - Pushes to `main` deploy through `.github/workflows/deploy-pages.yml`.
