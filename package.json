@@ -7,8 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "content:build": "node scripts/build-blog.js",
+    "content:validate": "node scripts/build-blog.js --check",
+    "dev": "npm run content:build && vite",
+    "build": "npm run content:build && vite build",
     "preview": "vite preview"
   },
   "keywords": [],

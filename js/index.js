@@ -32,11 +32,14 @@ const projectFiltersContainer = document.querySelector('#project-filters');
 const projectCards = document.querySelectorAll('.project-card');
 
 if (projectFiltersContainer && projectCards.length) {
-    const tagSet = new Set();
-    projectCards.forEach(card => {
-        const tags = (card.dataset.tags || '').split(/\s+/).filter(Boolean);
-        tags.forEach(tag => tagSet.add(tag));
-    });
+    const projectFilters = [
+        { tag: 'all', label: 'All' },
+        { tag: 'computational-design', label: 'Computational Design' },
+        { tag: 'cae-simulation', label: 'CAE & Simulation' },
+        { tag: 'product-footwear', label: 'Product & Footwear' },
+        { tag: 'xr-interaction', label: 'XR & Interaction' },
+        { tag: 'research-rd', label: 'Research & R&D' }
+    ];
 
     const createFilterButton = (tag, label, active = false) => {
         const button = document.createElement('button');
@@ -52,12 +55,9 @@ if (projectFiltersContainer && projectCards.length) {
     };
 
     const fragment = document.createDocumentFragment();
-    fragment.appendChild(createFilterButton('all', 'All', true));
-    Array.from(tagSet)
-        .sort((a, b) => a.localeCompare(b))
-        .forEach(tag => {
-            fragment.appendChild(createFilterButton(tag, `#${tag}`));
-        });
+    projectFilters.forEach((filter, index) => {
+        fragment.appendChild(createFilterButton(filter.tag, filter.label, index === 0));
+    });
     projectFiltersContainer.appendChild(fragment);
 
     const setActiveButton = (selectedTag) => {
@@ -70,8 +70,8 @@ if (projectFiltersContainer && projectCards.length) {
 
     const filterCards = (tag) => {
         projectCards.forEach(card => {
-            const tags = (card.dataset.tags || '').split(/\s+/);
-            const matches = tag === 'all' || tags.includes(tag);
+            const categories = (card.dataset.categories || '').split(/\s+/);
+            const matches = tag === 'all' || categories.includes(tag);
             card.classList.toggle('is-hidden', !matches);
         });
     };

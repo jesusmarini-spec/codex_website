@@ -344,6 +344,16 @@ section{
     border-color: var(--clr-accent-secondary);
     color: var(--clr-accent-secondary);
 }
+.btn--outline{
+    background: transparent;
+    color: var(--clr-dark);
+    border: 1px solid rgba(5,5,10,0.28);
+    box-shadow: none;
+}
+.btn--outline:hover{
+    color: var(--clr-accent);
+    border-color: var(--clr-accent);
+}
 /* Typography*/
 
 h1,
@@ -921,11 +931,26 @@ header{
     background: #0a0f1e;
     color: var(--clr-light);
 }
+.contact-cta--moon-rabbit{
+    position: relative;
+    background:
+        radial-gradient(circle at 12% 20%, rgba(76,125,255,0.28), transparent 38%),
+        radial-gradient(circle at 88% 78%, rgba(125,240,255,0.16), transparent 34%),
+        #070b18;
+    overflow: hidden;
+}
 .contact-cta__panel{
     background: rgba(255,255,255,0.04);
     border-radius: 1.5rem;
     padding: 2.5rem;
     border: 1px solid rgba(255,255,255,0.1);
+}
+.contact-cta__panel p{
+    max-width: 680px;
+}
+.contact-cta__brand{
+    width: min(210px, 55%);
+    margin-bottom: 1.5rem;
 }
 .contact-cta__actions{
     display: flex;
@@ -956,6 +981,18 @@ header{
 }
 .detail-card li{
     margin-bottom: .25rem;
+}
+.company-link{
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    margin-top: 1rem;
+    color: var(--clr-accent-secondary);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+}
+.company-link:hover{
+    color: var(--clr-light);
 }
 .career-path{
     background: #fff;
