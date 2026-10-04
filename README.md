@@ -12,6 +12,7 @@ Portfolio hub for Jesus Marini Parissi highlighting computational design, indust
 - **Responsive polish** with smoother typography scaling and adaptive header pill sizing across breakpoints.
 - **Article template** (`/blog/article.html`) hydrates full-length posts from the shared JSON dataset, including share buttons and tag chips.
 - **Shared styling/components** via `css/style.css`, `css/blog.css`, and lightweight vanilla JS in `js/index.js` plus `src/blog.js`.
+- **Complete production build** that includes every portfolio page plus the blog data, Unity runtime, 3D assets, and custom-domain configuration.
 
 ## Getting started
 1. `cd website_master`
