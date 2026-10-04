@@ -5,6 +5,7 @@ Portfolio hub for Jesus Marini Parissi highlighting computational design, indust
 ## Features
 - **Single-page portfolio** with hero copy, services, and a curated gallery of cross-disciplinary projects.
 - **Narrative About page** connecting Huatusco, Caffè 1100m, outdoor exploration, multidisciplinary experience, and the founding of Moon Rabbit Lab through responsive editorial layouts.
+- **Moon Rabbit conversion section** with a compact studio introduction, three-column desktop story cards, and swipeable mobile cards that guide visitors toward the company website.
 - **Unity WebGL showcase** (`Unity.html`) for interactive experiences backed by explicit deployment guardrails.
 - **Blog experience** (`/blog`) generated from reusable Markdown article files, with JSON-powered rendering and stubbed social feeds for Instagram and LinkedIn integrations.
 - **Project detail templates** (`fea_climbing.html`, `ABC_climbing.html`) share the upgraded hero/meta system, structured sections, and optional intro-video module.

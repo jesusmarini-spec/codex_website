@@ -6,7 +6,7 @@ import { renderSharedHtml } from './html-templates.js';
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ignoredDirectories = new Set(['.git', 'dist', 'node_modules', 'templates']);
 const siteConfig = JSON.parse(readFileSync(resolve(projectRoot, 'data', 'site.json'), 'utf8'));
-const expectedTitle = siteConfig.repositoryName;
+const expectedTitle = siteConfig.siteTitle;
 const errors = [];
 const warnings = [];
 
