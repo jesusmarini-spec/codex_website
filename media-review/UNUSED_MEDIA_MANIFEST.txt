@@ -1,0 +1,56 @@
+UNUSED MEDIA REVIEW MANIFEST
+============================
+
+Files moved: 48
+Total size: 82.32 MB
+
+Original path -> Review path
+
+img/Cover_2.png -> media-review/unused/img/Cover_2.png
+img/20220810_153044.jpg -> media-review/unused/img/20220810_153044.jpg
+img/Project13/portfolio-back.jpg -> media-review/unused/img/Project13/portfolio-back.jpg
+img/IMG_20140610_132317_027.jpg -> media-review/unused/img/IMG_20140610_132317_027.jpg
+img/Project5/5port-28.jpg -> media-review/unused/img/Project5/5port-28.jpg
+img/Project12/12port-17.JPG -> media-review/unused/img/Project12/12port-17.JPG
+img/Project12/12port-13.jpg -> media-review/unused/img/Project12/12port-13.jpg
+img/Project12/12port-14.jpg -> media-review/unused/img/Project12/12port-14.jpg
+img/Project12/12port-19.JPG -> media-review/unused/img/Project12/12port-19.JPG
+img/Project12/12port-1.jpg -> media-review/unused/img/Project12/12port-1.jpg
+img/Project12/12port-12.jpg -> media-review/unused/img/Project12/12port-12.jpg
+img/Project12/12port-18.JPG -> media-review/unused/img/Project12/12port-18.JPG
+img/Project12/12port-2.jpg -> media-review/unused/img/Project12/12port-2.jpg
+img/Project12/12port-15.jpg -> media-review/unused/img/Project12/12port-15.jpg
+img/Project12/12port-20.jpg -> media-review/unused/img/Project12/12port-20.jpg
+img/Project12/12port-8.jpg -> media-review/unused/img/Project12/12port-8.jpg
+img/Project12/12port-22.jpg -> media-review/unused/img/Project12/12port-22.jpg
+img/Project12/12port-7.jpg -> media-review/unused/img/Project12/12port-7.jpg
+img/Project12/12port-10.jpg -> media-review/unused/img/Project12/12port-10.jpg
+img/Project6/6port-21.jpg -> media-review/unused/img/Project6/6port-21.jpg
+img/IMG_20131029_133058_625.jpg -> media-review/unused/img/IMG_20131029_133058_625.jpg
+img/Project12/12port-9.jpg -> media-review/unused/img/Project12/12port-9.jpg
+img/Project6/6port-8.png -> media-review/unused/img/Project6/6port-8.png
+img/Project12/12port-6.jpg -> media-review/unused/img/Project12/12port-6.jpg
+img/Project6/6port-5.jpg -> media-review/unused/img/Project6/6port-5.jpg
+img/Project12/12port-5.jpg -> media-review/unused/img/Project12/12port-5.jpg
+img/IMG_20131024_142952_969.jpg -> media-review/unused/img/IMG_20131024_142952_969.jpg
+img/Project6/6port-14.jpg -> media-review/unused/img/Project6/6port-14.jpg
+img/project12.jpg -> media-review/unused/img/project12.jpg
+img/Project12/12port-21.jpg -> media-review/unused/img/Project12/12port-21.jpg
+img/Project12/12port-4.jpg -> media-review/unused/img/Project12/12port-4.jpg
+img/Moon_rabbit_design week.jpg -> media-review/unused/img/Moon_rabbit_design week.jpg
+img/Project12/12port-16.jpg -> media-review/unused/img/Project12/12port-16.jpg
+img/Project6/6port-7.png -> media-review/unused/img/Project6/6port-7.png
+img/Project12/12port-11.jpg -> media-review/unused/img/Project12/12port-11.jpg
+img/Project12/12port-3.jpg -> media-review/unused/img/Project12/12port-3.jpg
+img/Project10/portfolio-back.jpg -> media-review/unused/img/Project10/portfolio-back.jpg
+img/Project6/6port-26.png -> media-review/unused/img/Project6/6port-26.png
+img/Cover_design.png -> media-review/unused/img/Cover_design.png
+img/Project6/6port-6.png -> media-review/unused/img/Project6/6port-6.png
+img/who_i_am_.JPG -> media-review/unused/img/who_i_am_.JPG
+img/Project5/portfolio-back.jpg -> media-review/unused/img/Project5/portfolio-back.jpg
+img/AS_img.jpg -> media-review/unused/img/AS_img.jpg
+img/Project11/portfolio-back.jpg -> media-review/unused/img/Project11/portfolio-back.jpg
+img/Project3/benchmark.jpg -> media-review/unused/img/Project3/benchmark.jpg
+img/Project3/3port-16.jpg -> media-review/unused/img/Project3/3port-16.jpg
+img/Project2/frontal view.1501.png -> media-review/unused/img/Project2/frontal view.1501.png
+img/MR_Logo.png -> media-review/unused/img/MR_Logo.png

@@ -47,6 +47,32 @@ navLink.forEach(link =>{
 const projectFiltersContainer = document.querySelector('#project-filters');
 const projectCards = document.querySelectorAll('.project-card');
 
+const adaptiveMediaItems = document.querySelectorAll('[data-adaptive-media]');
+
+adaptiveMediaItems.forEach((media) => {
+    const image = media.querySelector('img');
+    if (!image) return;
+
+    const applyMediaOrientation = () => {
+        const ratio = image.naturalWidth / image.naturalHeight;
+        const orientation = ratio >= 1.25 ? 'landscape' : ratio <= 0.8 ? 'portrait' : 'square';
+        const section = media.closest('[data-adaptive-section]');
+
+        media.classList.add(`is-${orientation}`);
+        media.dataset.orientation = orientation;
+
+        if (section) {
+            section.classList.add(`media-is-${orientation}`);
+        }
+    };
+
+    if (image.complete && image.naturalWidth) {
+        applyMediaOrientation();
+    } else {
+        image.addEventListener('load', applyMediaOrientation, { once: true });
+    }
+});
+
 if (projectFiltersContainer && projectCards.length) {
     const projectFilters = [
         { tag: 'all', label: 'All' },

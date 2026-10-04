@@ -4,10 +4,10 @@
 
 ## Summary
 
-- Image directory: 254 files (404.48 MB)
-- Large assets (2 MB or more): 59
+- Image directory: 207 files (322.73 MB)
+- Large assets (2 MB or more): 40
 - Exact duplicate groups: 3
-- Possibly unreferenced: 49 files (80.88 MB)
+- Possibly unreferenced: 0 files (0.0 KB)
 
 ## Large Assets
 
@@ -29,47 +29,28 @@
 | `img/Project9/portfolio-back.png` | 5.16 MB |
 | `img/Project9/9port-1.png` | 4.98 MB |
 | `img/Project6/6port-16s1.gif` | 4.48 MB |
-| `img/Cover_2.png` | 4.42 MB |
 | `img/Project5/5port-27.jpg` | 4.40 MB |
 | `img/Project6/6port-22s3.gif` | 4.21 MB |
 | `img/Project13/13port-8.gif` | 4.16 MB |
 | `img/Project13/13port-2.jpg` | 4.00 MB |
 | `img/Project6/6port-16s2.gif` | 3.93 MB |
-| `img/20220810_153044.jpg` | 3.91 MB |
 | `img/Project6/6port-24s1.gif` | 3.89 MB |
-| `img/Project13/portfolio-back.jpg` | 3.85 MB |
 | `img/Project6/6port-26s1.gif` | 3.77 MB |
 | `img/Project13/13port-5.gif` | 3.74 MB |
 | `img/Project6/6port-18s1.gif` | 3.66 MB |
-| `img/IMG_20140610_132317_027.jpg` | 3.47 MB |
 | `img/Project6/6port-22s2.gif` | 3.37 MB |
 | `img/Project6/6port-24s2.gif` | 3.31 MB |
 | `img/Project6/6port-26s2.gif` | 3.16 MB |
-| `img/Project5/5port-28.jpg` | 3.13 MB |
 | `img/Project6/6port-18s2.gif` | 3.01 MB |
 | `img/Project8/portfolio-back.png` | 2.99 MB |
 | `img/Project6/6port-22s1.gif` | 2.98 MB |
-| `img/Project12/12port-17.JPG` | 2.87 MB |
 | `img/Project5/5port-3.png` | 2.78 MB |
-| `img/Project12/12port-13.jpg` | 2.76 MB |
-| `img/Project12/12port-14.jpg` | 2.71 MB |
-| `img/Project12/12port-19.JPG` | 2.69 MB |
 | `img/Project7/7port-1.png` | 2.66 MB |
 | `img/Project7/portfolio-back.png` | 2.66 MB |
 | `img/Project13/13port-4.jpg` | 2.54 MB |
-| `img/Project12/12port-1.jpg` | 2.51 MB |
-| `img/Project12/12port-12.jpg` | 2.49 MB |
 | `img/Project13/13port-1.jpg` | 2.42 MB |
-| `img/Project12/12port-18.JPG` | 2.16 MB |
-| `img/Project12/12port-2.jpg` | 2.15 MB |
-| `img/Project12/12port-15.jpg` | 2.12 MB |
-| `img/Project12/12port-20.jpg` | 2.12 MB |
 | `img/Project13/13port-9.gif` | 2.12 MB |
 | `img/Project2/2port-5.jpg` | 2.08 MB |
-| `img/Project12/12port-8.jpg` | 2.07 MB |
-| `img/Project12/12port-22.jpg` | 2.07 MB |
-| `img/Project12/12port-7.jpg` | 2.07 MB |
-| `img/Project12/12port-10.jpg` | 2.03 MB |
 | `img/Project6/portfolio-back.png` | 2.03 MB |
 | `img/project6.png` | 2.03 MB |
 
@@ -92,55 +73,5 @@
 
 ## Possibly Unreferenced
 
-| File | Size |
-| --- | ---: |
-| `img/Cover_2.png` | 4.42 MB |
-| `img/20220810_153044.jpg` | 3.91 MB |
-| `img/Project13/portfolio-back.jpg` | 3.85 MB |
-| `img/IMG_20140610_132317_027.jpg` | 3.47 MB |
-| `img/Project5/5port-28.jpg` | 3.13 MB |
-| `img/Project12/12port-17.JPG` | 2.87 MB |
-| `img/Project12/12port-13.jpg` | 2.76 MB |
-| `img/Project12/12port-14.jpg` | 2.71 MB |
-| `img/Project12/12port-19.JPG` | 2.69 MB |
-| `img/Project12/12port-1.jpg` | 2.51 MB |
-| `img/Project12/12port-12.jpg` | 2.49 MB |
-| `img/Project12/12port-18.JPG` | 2.16 MB |
-| `img/Project12/12port-2.jpg` | 2.15 MB |
-| `img/Project12/12port-15.jpg` | 2.12 MB |
-| `img/Project12/12port-20.jpg` | 2.12 MB |
-| `img/Project12/12port-8.jpg` | 2.07 MB |
-| `img/Project12/12port-22.jpg` | 2.07 MB |
-| `img/Project12/12port-7.jpg` | 2.07 MB |
-| `img/Project12/12port-10.jpg` | 2.03 MB |
-| `img/Project6/6port-21.jpg` | 1.94 MB |
-| `img/IMG_20131029_133058_625.jpg` | 1.88 MB |
-| `img/Project12/12port-9.jpg` | 1.83 MB |
-| `img/Project6/6port-8.png` | 1.82 MB |
-| `img/Project12/12port-6.jpg` | 1.81 MB |
-| `img/Project6/6port-5.jpg` | 1.80 MB |
-| `img/Project12/12port-5.jpg` | 1.76 MB |
-| `img/IMG_20131024_142952_969.jpg` | 1.75 MB |
-| `img/Project6/6port-14.jpg` | 1.75 MB |
-| `img/Project12/12port-21.jpg` | 1.54 MB |
-| `img/Project12/12port-4.jpg` | 1.53 MB |
-| `img/Moon_rabbit_design week.jpg` | 1.47 MB |
-| `img/Project12/12port-16.jpg` | 1.24 MB |
-| `img/Project6/6port-7.png` | 1.01 MB |
-| `img/Project12/12port-11.jpg` | 0.99 MB |
-| `img/Project12/12port-3.jpg` | 0.92 MB |
-| `img/Project10/portfolio-back.jpg` | 0.79 MB |
-| `img/Project6/6port-26.png` | 0.69 MB |
-| `img/Cover_design.png` | 0.60 MB |
-| `img/Project6/6port-6.png` | 0.57 MB |
-| `img/who_i_am_.JPG` | 0.49 MB |
-| `img/Project5/portfolio-back.jpg` | 0.27 MB |
-| `img/AS_img.jpg` | 0.24 MB |
-| `img/Project11/portfolio-back.jpg` | 0.15 MB |
-| `img/Project7/7port-5.JPG` | 0.13 MB |
-| `img/Project3/benchmark.jpg` | 0.10 MB |
-| `img/Project3/3port-16.jpg` | 82.5 KB |
-| `img/Project2/frontal view.1501.png` | 82.5 KB |
-| `img/Project2/2port-6.JPG` | 43.5 KB |
-| `img/MR_Logo.png` | 41.9 KB |
+No unreferenced assets detected.
 

@@ -1,14 +1,12 @@
 {
   "repositoryName": "codex_website",
   "analyticsId": "G-MFKSEHYHWT",
-  "contact": {
-    "email": "jmarini29@gmail.com",
-    "emailLabel": "jmarini29 [at] gmail [dot] com"
+  "company": {
+    "name": "Moon Rabbit Lab",
+    "url": "https://moonrabbitlab.com/"
   },
   "social": {
     "linkedin": "https://www.linkedin.com/in/marinijesus/",
-    "instagram": "https://www.instagram.com/j_marini29/",
-    "youtube": "https://www.youtube.com/channel/UC78pHcuDZ-nLF2S5JdyqMSQ/"
-  },
-  "copyrightYear": "2020"
+    "instagram": "https://www.instagram.com/j_marini29/"
+  }
 }

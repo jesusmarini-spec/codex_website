@@ -28,8 +28,12 @@ const patterns = {
 
 export const renderSharedHtml = (html, { basePath = '/' } = {}) => {
   const normalizedBasePath = basePath.endsWith('/') ? basePath : `${basePath}/`;
+  const copyrightYear = new Date().getFullYear();
   const partials = Object.fromEntries(
-    Object.keys(patterns).map((name) => [name, readPartial(name, { basePath: normalizedBasePath })])
+    Object.keys(patterns).map((name) => [name, readPartial(name, {
+      basePath: normalizedBasePath,
+      copyrightYear
+    })])
   );
   let renderedHtml = html;
 

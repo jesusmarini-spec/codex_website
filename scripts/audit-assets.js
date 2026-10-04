@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const assetRoot = resolve(projectRoot, 'img');
 const reportPath = resolve(projectRoot, 'docs', 'ASSET_AUDIT.md');
-const ignoredDirectories = new Set(['.git', 'dist', 'node_modules']);
+const ignoredDirectories = new Set(['.git', 'dist', 'media-review', 'node_modules']);
 const readableExtensions = new Set(['.css', '.html', '.js', '.json', '.md', '.txt']);
 const largeAssetThreshold = 2 * 1024 * 1024;
 
@@ -23,7 +23,9 @@ const formatBytes = (bytes) => {
 };
 
 const normalizePath = (filePath) => relative(projectRoot, filePath).replaceAll('\\', '/');
-const sourceFiles = collectFiles(projectRoot).filter((filePath) => readableExtensions.has(extname(filePath).toLowerCase()));
+const sourceFiles = collectFiles(projectRoot).filter((filePath) => (
+  filePath !== reportPath && readableExtensions.has(extname(filePath).toLowerCase())
+));
 const sourceText = sourceFiles
   .map((filePath) => readFileSync(filePath, 'utf8'))
   .join('\n')
