@@ -1,7 +1,7 @@
 ---
 id: my-article-id
 title: "Replace with the article title"
-date: 2026-10-04
+date: YYYY-MM-DD
 readTime: 5
 tags: computational-design, workflow
 heroImage: /img/blog/my-article-id/hero.webp
@@ -10,9 +10,10 @@ excerpt: "Write a short two-sentence preview for the blog listing. Markdown such
 status: draft
 ---
 
-# Replace with the article title
-
 Write a short opening that explains the context, challenge, or question behind the article.
+
+The page automatically uses the metadata title as its main heading. Start body
+sections with `##`; do not add another `#` heading here.
 
 ## Background
 
@@ -27,7 +28,7 @@ Explain why the work matters and what readers need to know before seeing the pro
 3. Describe the third step.
 
 <figure>
-  <img src="/img/blog/my-article-id/process-02.webp" alt="Describe what the second process image shows">
+  <img src="/img/blog/my-article-id/process-02.webp" alt="Describe what the second process image shows" loading="lazy">
   <figcaption>Add a useful caption explaining the image.</figcaption>
 </figure>
 

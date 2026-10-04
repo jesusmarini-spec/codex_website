@@ -1,60 +1,87 @@
 CODEX_WEBSITE MODIFICATION GUIDE
 ================================
 
-This file is the quick reference for updating website text, grammar, images,
+Quick reference for updating website text, images, shared information,
 projects, and blog articles.
 
-More detailed references:
+Detailed references:
 - CONTENT_GUIDE.md
+- docs/CODEBASE_GUIDE.md
 - docs/COPY_REVIEW_CHECKLIST.md
 - docs/GITHUB_PAGES.md
 
 
-1. WHERE TO MODIFY TEXT
------------------------
+1. LANDING, ABOUT, AND PROJECT TEXT
+-----------------------------------
 
 Landing page:
 - File: index.html
-- Hero introduction starts around line 68.
-- Experience/expertise starts around line 115.
-- Career path/About summary starts around line 167.
-- Blog preview starts around line 200.
-- Portfolio starts around line 227.
-- Moon Rabbit Lab section starts around line 405.
+- Search by section id instead of relying on line numbers:
+  - id="home" for the hero
+  - id="services" for experience
+  - id="about" for the career path
+  - id="work" for the portfolio
+  - id="connect" for Moon Rabbit Lab
 
 About page:
 - File: about.html
-- Main biography starts around line 64.
+- Edit the biography inside the section with id="about".
 
 Project pages:
-- Each project has its own HTML file.
-- Examples:
-  - fea_climbing.html
-  - ABC_climbing.html
-  - redstorm.html
-  - r2heater.html
-  - pollarroller_me310.html
-  - airport_travel_assistant.html
-  - MIT_Design_Lab.html
-  - Ford_CAE_Engineer.html
-  - puma_xetic.html
-  - puma_xetic_basketball.html
-  - Research_Development_design.html
-  - nespresso.html
-
-Navigation and footer text:
-- Navigation and footer content is repeated across several HTML files.
-- A global wording change must be applied consistently to every page.
-- Ask Codex to apply global changes if you want to avoid missing a page.
+- Each project still has its own HTML file.
+- Edit only the project-specific hero, metadata, descriptions, lists, images,
+  and video sections in that file.
+- Do not replace the comments named shared:analytics, shared:security,
+  shared:header, or shared:footer.
 
 
-2. WHERE TO MODIFY BLOG ARTICLES
---------------------------------
+2. SHARED WEBSITE INFORMATION
+-----------------------------
+
+Contact details, social URLs, analytics id, and repository title:
+- File: data/site.json
+
+Navigation:
+- File: src/templates/partials/header.html
+
+Footer:
+- File: src/templates/partials/footer.html
+
+Security policy:
+- File: src/templates/partials/security.html
+
+Analytics markup:
+- File: src/templates/partials/analytics.html
+
+These partials are injected into every applicable page by Vite. Do not copy
+the complete header or footer back into individual HTML files.
+
+
+3. COLORS, FONTS, AND LAYOUT
+----------------------------
+
+Global colors, typography, and responsive font sizes:
+- File: css/tokens.css
+
+Main landing, navigation, project, and responsive styles:
+- File: css/style.css
+
+Blog-only styles:
+- File: css/blog.css
+
+Legacy Unity and portfolio styles:
+- Files: css/port-6.css and css/port-items.css
+
+Prefer changing a variable in css/tokens.css when a color or font size should
+change across the entire website.
+
+
+4. BLOG ARTICLES
+----------------
 
 Existing articles:
 - Folder: content/blog/
-- Each article uses this structure:
-  content/blog/article-id/index.md
+- Structure: content/blog/article-id/index.md
 
 New article template:
 - File: content/blog/_template.md
@@ -62,45 +89,53 @@ New article template:
 To create an article:
 1. Copy content/blog/_template.md.
 2. Create content/blog/your-article-id/index.md.
-3. Replace the template metadata and article content.
+3. Replace the metadata and article content.
 4. Add images under img/blog/your-article-id/.
-5. Set status to published when the article is ready.
+5. Use useful alt text for every image.
+6. Set status to published when ready.
+7. Run cmd /c npm run content:build.
 
-Do not manually edit data/posts.json. It is automatically generated from the
-Markdown article files.
+Do not manually edit data/posts.json. It is generated from the Markdown files.
 
 
-3. WHERE TO MODIFY IMAGES
--------------------------
+5. IMAGES, VIDEO, AND OTHER MEDIA
+---------------------------------
 
-General website images:
+General media:
 - Folder: img/
 
-Blog images:
+Blog media:
 - Folder: img/blog/article-id/
 
-Branding and logo guidance:
+Branding guidance:
 - File: img/branding/README.md
 
 Blog image guidance:
 - File: img/blog/README.md
 
-When replacing an image while keeping its existing filename, verify that the
-new image uses a compatible aspect ratio. When changing the filename, update
-the corresponding src or heroImage path in the source file.
+Use compatible aspect ratios when replacing an existing file. If the filename
+changes, update the corresponding src, poster, or heroImage reference.
 
-Always write useful alt text that describes the image and its purpose.
+For new assets:
+- Prefer lowercase filenames with hyphens.
+- Prefer WebP or AVIF for large images.
+- Prefer MP4 or WebM instead of large GIF animations.
+- Add loading="lazy" to images below the first visible section.
 
-
-4. FILES THAT SHOULD NOT BE EDITED DIRECTLY
---------------------------------------------
-
-- Do not edit files inside dist/. This folder is recreated during every build.
-- Do not edit data/posts.json for article content.
-- Do not edit generated files inside node_modules/.
+Run cmd /c npm run assets:audit to refresh docs/ASSET_AUDIT.md. The report is
+advisory; verify files manually before deleting them.
 
 
-5. GRAMMAR AND WRITING REVIEW
+6. FILES NOT TO EDIT DIRECTLY
+-----------------------------
+
+- dist/ because it is recreated during every build.
+- data/posts.json because it is generated from blog Markdown.
+- node_modules/ because it is managed by npm.
+- package-lock.json unless dependencies are intentionally changed through npm.
+
+
+7. GRAMMAR AND WRITING REVIEW
 -----------------------------
 
 Use docs/COPY_REVIEW_CHECKLIST.md before publishing.
@@ -110,68 +145,66 @@ Check that:
 - Verb tense and capitalization are consistent.
 - Company, product, and project names are spelled consistently.
 - Headings follow a consistent style.
-- Links and button labels clearly describe their destination.
-- Image alt text is meaningful.
-- Page descriptions and social metadata still match the revised content.
+- Links and buttons describe their destination.
+- Image alt text explains meaningful images.
+- Page descriptions and social metadata match revised content.
 
 
-6. LOCAL REVIEW AFTER MODIFICATIONS
------------------------------------
+8. LOCAL REVIEW
+---------------
 
 Open PowerShell and run:
 
 cd C:\Users\desig\Desktop\codex_website\website_master
 cmd /c npm run content:validate
+cmd /c npm run site:validate
 cmd /c npm run dev
 
-Open the local website at:
-http://localhost:5173/
+Open:
+http://127.0.0.1:5173/index.html
 
-Check desktop and mobile layouts. Review navigation, links, images, project
-pages, blog cards, and full blog articles.
+Always review through Vite. Opening an HTML file directly will not expand the
+shared template markers.
 
-Stop the local server with Ctrl+C when finished.
+Check desktop and mobile layouts, navigation, links, images, project pages,
+blog cards, and full articles. Stop the local server with Ctrl+C.
 
 
-7. PRODUCTION BUILD CHECK
--------------------------
+9. PRODUCTION CHECK
+-------------------
 
 Before publishing, run:
 
 cmd /c npm run build
 
-The build must complete successfully. The generated production website will
-be placed in dist/.
+The build validates blog content and the website, then creates dist/.
 
 
-8. PUBLISHING TO GITHUB PAGES
------------------------------
+10. PUBLISHING TO GITHUB PAGES
+------------------------------
 
-After reviewing the website locally and completing the production build:
+After local review and a successful build, commit and push the changes when
+you are ready. A push to main starts the GitHub Pages workflow.
 
-git add .
-git commit -m "Improve website copy and grammar"
-git push origin main
-
-Pushing to main automatically runs the GitHub Pages deployment workflow.
-
-Current website URL:
+Current website:
 https://jesusmarini-spec.github.io/codex_website/
 
-Check the repository Actions tab if deployment fails:
+Deployment status:
 https://github.com/jesusmarini-spec/codex_website/actions
 
-Custom-domain instructions are available in docs/GITHUB_PAGES.md.
+Custom-domain instructions:
+- docs/GITHUB_PAGES.md
 
 
-9. RECOMMENDED WORKFLOW
------------------------
+11. RECOMMENDED WORKFLOW
+------------------------
 
 1. Update one section or article at a time.
-2. Save and review it locally.
-3. Check spelling, grammar, links, images, and responsive layout.
-4. Run content validation.
+2. Save and review through the Vite development server.
+3. Check spelling, links, images, and responsive layouts.
+4. Run content and site validation.
 5. Run the production build.
-6. Commit with a clear description.
-7. Push to main.
-8. Verify the deployed GitHub Pages website.
+6. Review the Git diff and asset audit when relevant.
+7. Commit with a clear description.
+8. Push only when the revision is approved.
+9. Verify the deployed GitHub Pages website.

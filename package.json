@@ -9,26 +9,23 @@
   "scripts": {
     "content:build": "node scripts/build-blog.js",
     "content:validate": "node scripts/build-blog.js --check",
-    "dev": "npm run content:build && vite",
-    "build": "npm run content:build && vite build",
-    "preview": "vite preview"
+    "site:validate": "node scripts/validate-site.js",
+    "assets:audit": "node scripts/audit-assets.js",
+    "dev": "npm run content:build && vite --configLoader runner",
+    "build": "npm run content:build && npm run site:validate && vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "sass": "^1.97.2",
     "vite": "^7.3.1"
   },
   "dependencies": {
-    "axios": "^1.13.2",
     "dayjs": "^1.11.19",
     "dompurify": "^3.3.1",
-    "dotenv": "^17.2.3",
     "ky": "^1.14.2",
-    "lite-youtube-embed": "^0.3.4",
-    "marked": "^17.0.1",
-    "swiper": "^12.0.3"
+    "marked": "^17.0.1"
   }
 }

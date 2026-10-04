@@ -1,89 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('./tokens.css');
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
-/* Custom properties*/
-
-:root{
-    --ff-primary: 'Space Grotesk', 'Nunito', sans-serif;
-    --ff-secondary: 'IBM Plex Mono', 'Lato', sans-serif;
-
-    --fw-lg:200;
-    --fw-reg: 400;
-    --fw-bold:700;
-
-    --clr-light: #f5f6fb;
-    --clr-dark: #05050a;
-    --clr-dark--op:#05050af2 ;
-    --clr-accent: #4c7dff;
-    --clr-accent-secondary:#7df0ff;
-    --clr-gray:rgba(236, 236, 236, 0.836);
-
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.2rem;
-    --fs-body: 1rem;
-    --fs-nav: 1rem;
-    --fs-fot: .8rem;
-
-
-    --fs-intro:1.75rem;
-
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,0.15);
-
-    --gradient-hero: radial-gradient(circle at 20% 20%, #18263d, rgba(24,38,61,0)),
-                     radial-gradient(circle at 80% 0%, rgba(124,240,255,0.3), transparent),
-                     radial-gradient(circle at 80% 80%, rgba(76,125,255,0.4), transparent),
-                     linear-gradient(135deg, #05050a, #0f1630 55%, #03050f);
-
-    --header-offset-y: 1.75rem;
-    --header-offset-x: 2.75rem;
-}
-
-@media (min-width: 800px){
-    :root{
-        --fs-h1: 3.75rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-        --fs-nav: 1.5rem;
-    }
-}
-@media (min-width: 600px){
-    :root{
-        --fs-h1: 3.4rem;
-        --fs-h2: 3rem;
-        --fs-h3: 1.35rem;
-        --fs-body: 1.0625rem;
-        --fs-nav: 1.2rem;
-    }
-}
-@media (max-width: 900px){
-    :root{
-        --header-offset-y: 1.4rem;
-        --header-offset-x: 2.2rem;
-    }
-}
-@media (max-width: 600px){
-    :root{
-        --header-offset-y: 1rem;
-        --header-offset-x: 1.4rem;
-    }
-}
-/*@media (max-width: 600px){
-    :root{
-        --fs-h1: 1.5rem;
-        --fs-h2: 2.25rem;
-        --fs-h3: 1.25rem;
-        --fs-body: 1rem;
-    }
-}*/
-
 
 /*General styles*/
 
@@ -414,11 +335,11 @@ header{
 .logo{
     position: static;
     z-index: 101;
-    max-width: 150px;
+    max-width: 120px;
     display: flex;
     align-items: center;
-    height: 3.25rem;
-    margin-right: 1rem;
+    height: 2.25rem;
+    margin-right: .75rem;
 }
 .logo--mobile{
     display: none;
@@ -432,7 +353,7 @@ header{
     filter: brightness(0) invert(1);
 }
 
-/*Experimento togle nav*/
+/* Primary navigation */
 .nav{
     position: fixed;
     display: flex;
@@ -444,20 +365,20 @@ header{
     left: 50%;
     width: 70vw;
     transform: translateX(-50%);
-    padding: .75rem 1.5rem;
+    padding: .45rem 1.2rem;
     z-index: 100;
     opacity: 1;
     border-radius: 999px;
     border: 1px solid rgba(125,240,255,0.18);
     box-shadow: 0 20px 55px rgba(5,5,10,0.45);
     backdrop-filter: blur(18px);
-    min-height: 3.25rem;
-    gap: 1rem;
+    min-height: 3.15rem;
+    gap: .75rem;
 }
 
 @media (max-width: 1200px){
     .nav{
-        padding: .6rem 1.2rem;
+        padding: .45rem 1rem;
         width: 78vw;
     }
     .nav__list{
@@ -465,7 +386,7 @@ header{
     }
     .nav__link{
         font-size: 1rem;
-        padding: .3rem .7rem;
+        padding: .3rem .65rem;
     }
 }
 @media (max-width: 1024px){
@@ -497,7 +418,7 @@ header{
     margin: 0;
     padding: 0;
     justify-content: flex-end;
-    gap: 1.5rem;
+    gap: 1rem;
     flex: 1;
     
 }
@@ -506,7 +427,7 @@ header{
     font-weight: var(--fw-reg);
     font-size: var(--fs-nav);
     text-decoration: none;
-    padding: .35em .8em;
+    padding: .3em .65em;
     border-radius: 999px;
     transition: color 150ms ease, background 150ms ease;
 }
@@ -524,9 +445,6 @@ header{
     cursor: pointer;
     z-index: 1000;
 }
-/*Cuando baja nueva propiedad*/
-
-/**/
 @media (max-width: 600px){
     header::before{
         content: '';
@@ -861,7 +779,7 @@ header{
     border-radius: .5em;
     max-width: 250px;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     justify-content: center;
 }
 .section__subtitle--about{
@@ -918,13 +836,13 @@ header{
     max-width: 1000px;
     text-align: center;
     margin: 0 auto 2em;
-    padding: 0 auto;
+    padding: 0;
     max-width: 900px;
 }
 
 .portfolio{
     display: grid;
-    grid-template-columns: repeat(auto-fiLL,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .blog-teaser{
     background: #f8f9ff;

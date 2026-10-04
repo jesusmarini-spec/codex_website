@@ -153,6 +153,10 @@ const validateArticle = (article) => {
     errors.push('Article body is empty.');
   }
 
+  if (/^#\s+\S/m.test(content)) {
+    errors.push('Article body must start headings at ## because the metadata title is rendered as the page h1.');
+  }
+
   if (/\b(?:TODO|TBD)\b|<replace(?:\s|>)/i.test(content)) {
     errors.push('Article body contains placeholder text.');
   }

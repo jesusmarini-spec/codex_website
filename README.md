@@ -13,19 +13,23 @@ Portfolio hub for Jesus Marini Parissi highlighting computational design, indust
 - **Mobile navigation improvements** with a readable fixed header, centered hamburger control, reliable home-logo navigation, and overflow-safe layouts.
 - **Responsive project pages** with centered content cards, reset media margins, and single-column galleries on small screens.
 - **Article template** (`/blog/article.html`) hydrates full-length posts from the shared JSON dataset, including share buttons and tag chips.
-- **Shared styling/components** via `css/style.css`, `css/blog.css`, and lightweight vanilla JS in `js/index.js` plus `src/blog.js`.
+- **Shared site shell** with centrally maintained header, footer, analytics, and security partials injected by Vite.
+- **Modular design tokens** in `css/tokens.css`, page styling in `css/style.css` and `css/blog.css`, and lightweight vanilla JavaScript.
 - **Complete production build** that includes every portfolio page plus the blog data, Unity runtime, 3D assets, and custom-domain configuration.
-- **Content authoring toolkit** with an article template, image conventions, editing guide, copy-review checklist, and automated blog validation.
+- **Content authoring toolkit** with an article template, central site settings, image conventions, editing guides, and automated blog/site validation.
+- **Asset audit tooling** that reports large, duplicated, and possibly unused media without deleting source files.
 - **GitHub Pages deployment** through GitHub Actions with separate base-path settings for the generic project URL and future custom domain.
 
 ## Getting started
 1. `cd website_master`
-2. `npm install` (installs Vite, Sass, and content helper libraries).
+2. `npm install` installs Vite and the blog rendering libraries.
 3. `npm run content:build` generates `data/posts.json` from the Markdown files in `content/blog/`.
 4. `npm run content:validate` checks article metadata, image paths, alt text, and generated JSON.
 5. `npm run dev` generates blog content and launches the local Vite server at http://localhost:5173.
-6. `npm run build` validates content and emits the production-ready site into `dist/`.
-7. Review `Modify_guide.txt` for the quick editing workflow, `CONTENT_GUIDE.md` for detailed content guidance, and `docs/deployment.md` before deployment.
+6. `npm run site:validate` checks titles, local links, assets, duplicate IDs, and repeated stylesheets.
+7. `npm run assets:audit` refreshes `docs/ASSET_AUDIT.md` for reviewed media cleanup.
+8. `npm run build` validates content and the site before emitting the production-ready files into `dist/`.
+9. Review `Modify_guide.txt`, `CONTENT_GUIDE.md`, `docs/CODEBASE_GUIDE.md`, and `docs/deployment.md` before larger changes or deployment.
 
 ## Deployment
 - Pushes to `main` deploy through `.github/workflows/deploy-pages.yml`.

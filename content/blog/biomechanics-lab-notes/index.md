@@ -10,11 +10,9 @@ excerpt: "Captured dual force plate sessions with a **custom Python logger** and
 status: published
 ---
 
-# Milan lab notes
-
 Two set-ups ran concurrently: a dual force-plate runway and a motion-capture rig pointed at the ankle complex. A Python logger built on `bleak` streamed raw IMU packets into Rhino inside of 300 milliseconds.
 
-### Highlights
+## Highlights
 
 - Sharing raw curves inside a touch UI let athletes annotate peaks themselves—faster than post-session surveys.
 - A clash-detection script compared orthotics against upcoming uppers, reducing resample loops by one full sprint.

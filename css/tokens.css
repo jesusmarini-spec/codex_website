@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+    --ff-primary: 'Space Grotesk', 'Nunito', sans-serif;
+    --ff-secondary: 'IBM Plex Mono', 'Lato', sans-serif;
+    --fw-lg: 200;
+    --fw-reg: 400;
+    --fw-bold: 700;
+    --clr-light: #f5f6fb;
+    --clr-dark: #05050a;
+    --clr-dark--op: #05050af2;
+    --clr-accent: #4c7dff;
+    --clr-accent-secondary: #7df0ff;
+    --clr-gray: rgba(236, 236, 236, 0.836);
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.2rem;
+    --fs-body: 1rem;
+    --fs-nav: 1rem;
+    --fs-fot: .8rem;
+    --fs-intro: 1.75rem;
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+          0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+    --gradient-hero: radial-gradient(circle at 20% 20%, #18263d, rgba(24, 38, 61, 0)),
+                     radial-gradient(circle at 80% 0%, rgba(124, 240, 255, 0.3), transparent),
+                     radial-gradient(circle at 80% 80%, rgba(76, 125, 255, 0.4), transparent),
+                     linear-gradient(135deg, #05050a, #0f1630 55%, #03050f);
+    --header-offset-y: 1.75rem;
+    --header-offset-x: 2.75rem;
+}
+
+@media (min-width: 600px) {
+    :root {
+        --fs-h1: 3.4rem;
+        --fs-h2: 3rem;
+        --fs-h3: 1.35rem;
+        --fs-body: 1.0625rem;
+    }
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 3.75rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --header-offset-y: 1.4rem;
+        --header-offset-x: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --header-offset-y: 1rem;
+        --header-offset-x: 1.4rem;
+    }
+}

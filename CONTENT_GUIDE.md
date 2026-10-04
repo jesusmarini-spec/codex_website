@@ -8,7 +8,7 @@ This guide explains where to update text, images, logos, portfolio projects, and
 2. Update content in the files listed below.
 3. Run `cmd /c npm run content:build` after changing blog Markdown.
 4. Run `cmd /c npm run dev` and review the site locally.
-5. Run `cmd /c npm run content:validate` before committing.
+5. Run `cmd /c npm run content:validate` and `cmd /c npm run site:validate` before committing.
 6. Run `cmd /c npm run build` before publishing.
 
 When correcting grammar, edit only the words between HTML tags. Do not rename values such as `class`, `id`, `href`, `src`, `data-tags`, or `data-categories` unless the guide specifically asks you to.
@@ -108,7 +108,10 @@ Store project-specific images inside the existing `img/ProjectN/` directory when
 - `img/canal_logo.png`: browser favicon.
 - `img/branding/`: recommended location for future logo variants.
 
-Navigation and footer markup is repeated across pages. Ask Codex to make site-wide navigation or logo changes so every page stays synchronized.
+Shared contact and social links live in `data/site.json`. Navigation and footer
+markup live in `src/templates/partials/header.html` and
+`src/templates/partials/footer.html`. Change these shared sources instead of
+editing individual page shells.
 
 ## Blog authoring
 
@@ -128,12 +131,16 @@ img/blog/my-new-article/process-01.webp
 ```
 
 3. Complete the metadata at the top of `index.md`.
-4. Write the article below the second `---` line using Markdown.
+4. Write the article below the second `---` line using Markdown. The page
+   automatically renders the metadata title as its main heading, so begin body
+   sections with `##` rather than adding another `#` heading.
 5. Set `status: published` when it is ready.
 6. Run:
 
 ```powershell
 cmd /c npm run content:build
+cmd /c npm run content:validate
+cmd /c npm run site:validate
 cmd /c npm run dev
 ```
 
@@ -152,8 +159,6 @@ Article URLs use the ID:
 ## Markdown examples
 
 ```markdown
-# Main article heading
-
 ## Section heading
 
 Regular paragraph with **bold text** and [a link](https://example.com).
@@ -170,7 +175,7 @@ For an image with a visible caption:
 
 ```html
 <figure>
-  <img src="/img/blog/my-new-article/process-02.webp" alt="Describe what the image shows">
+  <img src="/img/blog/my-new-article/process-02.webp" alt="Describe what the image shows" loading="lazy">
   <figcaption>Explain why this image matters.</figcaption>
 </figure>
 ```

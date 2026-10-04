@@ -10,8 +10,6 @@ excerpt: "Mapped out a **four week sprint** that links athlete scans, CAE featur
 status: published
 ---
 
-# Moon Rabbit sprint system for computational footwear
-
 ## Why build this now
 
 Parity across biomechanics, CAE, and marketing timelines was the recurring blocker during 2024 launches. The sprint kit keeps athlete footwear briefs tangible even when the team spans Milan, Boston, and Seoul.

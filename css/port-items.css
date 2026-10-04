@@ -187,7 +187,7 @@ header{
     top: 1em;
     z-index: 1000;
 }
-/*Experimento togle nav*/
+/* Primary navigation */
 .nav{
     position: fixed;
     display: grid;
@@ -224,9 +224,6 @@ header{
     color: var(--clr-dark);
     opacity: .75;
 }
-/*Cuando baja nueva propiedad*/
-
-/**/
 @media (max-width: 600px){
      .logo{
         position: relative;
@@ -510,4 +507,3 @@ header{
     background-size: 50%;
     background-repeat: no-repeat;
 }*/
-

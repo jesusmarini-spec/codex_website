@@ -188,7 +188,7 @@ header{
     top: 1em;
     z-index: 1000;
 }
-/*Experimento togle nav*/
+/* Primary navigation */
 .nav{
     position: fixed;
     display: grid;
@@ -225,9 +225,6 @@ header{
     color: var(--clr-dark);
     opacity: .75;
 }
-/*Cuando baja nueva propiedad*/
-
-/**/
 @media (max-width: 600px){
      .logo{
         position: relative;
@@ -343,7 +340,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
-    padding: 0 auto;
+    padding: 0;
     margin: 0 auto;
 }
 .img__background--port5{
@@ -392,7 +389,7 @@ header{
 }
 .parag_title{
     margin: 2em auto 1em;
-    padding: 0 auto;
+    padding: 0;
     max-width: 800px;
     text-align: left;
     color: var(--clr-accent);
@@ -458,7 +455,7 @@ pointer-events: none;
 }
 .port__img-grid3{
     grid-area: it3;
-    padding: 0 auto;
+    padding: 0;
     width: 50%;
     align-content: center;
     justify-content: center;
@@ -730,4 +727,3 @@ pointer-events: none;
     background-size: 50%;
     background-repeat: no-repeat;
 }*/
-

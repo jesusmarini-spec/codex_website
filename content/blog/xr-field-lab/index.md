@@ -10,8 +10,6 @@ excerpt: "Brought a mobile XR rig to the track so athletes could inspect stress 
 status: published
 ---
 
-# XR field lab recap
-
 We transformed a pop-up tent into an XR lab so athletes could review computational insights without leaving the track.
 
 ![Mobile rig on the track](/img/Project7/7port-1.png)

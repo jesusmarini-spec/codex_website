@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite';
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync } from 'fs';
 import { dirname, relative, resolve } from 'path';
+import { fileURLToPath } from 'url';
+import { sharedHtmlPlugin } from './scripts/html-templates.js';
 
-const rootDirectory = resolve(__dirname);
-const ignoredDirectories = new Set(['dist', 'node_modules']);
+const rootDirectory = dirname(fileURLToPath(import.meta.url));
+const ignoredDirectories = new Set(['dist', 'node_modules', 'templates']);
 
 const collectHtmlEntries = (directory) => readdirSync(directory, { withFileTypes: true })
   .flatMap((entry) => {
@@ -73,7 +75,7 @@ const copyRuntimeAssets = () => ({
 export default defineConfig({
   root: '.',
   base: siteBase,
-  plugins: [copyRuntimeAssets()],
+  plugins: [sharedHtmlPlugin(siteBase), copyRuntimeAssets()],
   server: {
     open: '/index.html',
     port: 5173
