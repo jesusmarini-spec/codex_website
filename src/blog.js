@@ -3,9 +3,13 @@ import dayjs from 'dayjs';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 
-const POSTS_ENDPOINT = '/data/posts.json';
-const INSTAGRAM_ENDPOINT = '/data/instagram.json';
-const LINKEDIN_ENDPOINT = '/data/linkedin.json';
+const sitePath = (path) => path.startsWith('/')
+  ? `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+  : path;
+
+const POSTS_ENDPOINT = sitePath('/data/posts.json');
+const INSTAGRAM_ENDPOINT = sitePath('/data/instagram.json');
+const LINKEDIN_ENDPOINT = sitePath('/data/linkedin.json');
 
 const state = {
   posts: [],
@@ -29,11 +33,11 @@ const fallbackMessage = (container, message) => {
 };
 
 const createPostCard = (post) => {
-  const articleLink = `/blog/article.html?id=${encodeURIComponent(post.id)}`;
+  const articleLink = sitePath(`/blog/article.html?id=${encodeURIComponent(post.id)}`);
   const wrapper = document.createElement('article');
   wrapper.className = 'blog-card';
   wrapper.innerHTML = `
-    <img src="${post.heroImage}" alt="${post.heroAlt || post.title}" class="blog-card__image">
+    <img src="${sitePath(post.heroImage)}" alt="${post.heroAlt || post.title}" class="blog-card__image">
     <div class="blog-card__body">
       <div class="blog-card__meta">${formatDate(post.date)} • ${post.readTime} min read</div>
       <h3>${post.title}</h3>
@@ -89,7 +93,7 @@ const renderInstagramFeed = (items = []) => {
 
   instagramEl.innerHTML = items.map((item) => `
     <article class="social-card">
-      <img class="social-card__thumb" src="${item.mediaUrl}" alt="${item.caption}">
+      <img class="social-card__thumb" src="${sitePath(item.mediaUrl)}" alt="${item.caption}">
       <div class="social-card__caption">${item.caption}</div>
       <div class="social-card__meta">${formatDate(item.timestamp)}</div>
     </article>

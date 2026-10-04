@@ -14,6 +14,7 @@ Portfolio hub for Jesus Marini Parissi highlighting computational design, indust
 - **Shared styling/components** via `css/style.css`, `css/blog.css`, and lightweight vanilla JS in `js/index.js` plus `src/blog.js`.
 - **Complete production build** that includes every portfolio page plus the blog data, Unity runtime, 3D assets, and custom-domain configuration.
 - **Content authoring toolkit** with an article template, image conventions, editing guide, copy-review checklist, and automated blog validation.
+- **GitHub Pages deployment** through GitHub Actions with separate base-path settings for the generic project URL and future custom domain.
 
 ## Getting started
 1. `cd website_master`
@@ -23,6 +24,11 @@ Portfolio hub for Jesus Marini Parissi highlighting computational design, indust
 5. `npm run dev` generates blog content and launches the local Vite server at http://localhost:5173.
 6. `npm run build` validates content and emits the production-ready site into `dist/`.
 7. Review `CONTENT_GUIDE.md` for manual content and image updates, then `docs/deployment.md` before deployment.
+
+## Deployment
+- Pushes to `main` deploy through `.github/workflows/deploy-pages.yml`.
+- The generic site URL is `https://jesusmarini-spec.github.io/codex_website/`.
+- Follow `docs/GITHUB_PAGES.md` to verify the generic deployment and later move `jmariniparissi.com` safely.
 
 ## Controls
 - Use the header toggle (`.nav__toggle`) on mobile to open/close navigation; links route back to anchors on `index.html` or scroll sections on `/blog`.

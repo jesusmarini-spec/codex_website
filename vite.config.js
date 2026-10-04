@@ -26,7 +26,8 @@ const htmlEntries = Object.fromEntries(
   })
 );
 
-const staticAssets = ['data', 'Build', 'TemplateData', 'team3', 'CNAME'];
+const staticAssets = ['data', 'Build', 'TemplateData', 'team3'];
+const siteBase = process.env.VITE_BASE_PATH || '/';
 
 const copyRuntimeAssets = () => ({
   name: 'copy-runtime-assets',
@@ -43,6 +44,7 @@ const copyRuntimeAssets = () => ({
 
 export default defineConfig({
   root: '.',
+  base: siteBase,
   plugins: [copyRuntimeAssets()],
   server: {
     open: '/index.html',

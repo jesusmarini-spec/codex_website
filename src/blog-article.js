@@ -3,7 +3,11 @@ import dayjs from 'dayjs';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 
-const POSTS_ENDPOINT = '/data/posts.json';
+const sitePath = (path) => path.startsWith('/')
+  ? `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+  : path;
+
+const POSTS_ENDPOINT = sitePath('/data/posts.json');
 const root = document.querySelector('#article-root');
 
 const params = new URLSearchParams(window.location.search);
@@ -11,14 +15,17 @@ const articleId = params.get('id');
 
 const sanitizeMarkdown = (value = '') => {
   const raw = marked.parse(value, { mangle: false, headerIds: true });
-  return DOMPurify.sanitize(raw);
+  return DOMPurify.sanitize(raw).replace(
+    /\b(src|href)="\/(?!\/)/g,
+    `$1="${import.meta.env.BASE_URL}`
+  );
 };
 
 const renderMessage = (message) => {
   root.innerHTML = `
     <div class="blog-empty-state">
       <p>${message}</p>
-      <a class="btn article-backlink__btn" href="/blog/index.html">Back to journal</a>
+      <a class="btn article-backlink__btn" href="${sitePath('/blog/index.html')}">Back to journal</a>
     </div>
   `;
 };
@@ -53,7 +60,7 @@ const renderArticle = (post) => {
         <span>•</span>
         <span>${post.readTime} min read</span>
       </div>
-      <img class="article-hero__image" src="${post.heroImage}" alt="${post.heroAlt || post.title}">
+      <img class="article-hero__image" src="${sitePath(post.heroImage)}" alt="${post.heroAlt || post.title}">
     </div>
 
     <div class="article-content">
@@ -76,7 +83,7 @@ const renderArticle = (post) => {
     </div>
 
     <div class="article-backlink">
-      <a class="btn" href="/blog/index.html">Back to journal</a>
+      <a class="btn" href="${sitePath('/blog/index.html')}">Back to journal</a>
     </div>
   `;
 };
